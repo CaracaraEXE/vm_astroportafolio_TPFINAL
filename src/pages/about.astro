@@ -1,3 +1,18 @@
+---
+
+const me = {
+    name:"Herbertia",
+    pais:"Argentina",
+    horoscopo:"leo",
+    hobbies:["dibujo","escritura","scrapbooking"],
+}
+
+const skills = ["HTML","CSS","JS","Photoshop","Shotcut","Adobe Illustrator"]
+
+const happy = true;
+const finished = false;
+const goal = 3;
+---
 <html lang="es">
     <head>
         <meta charset="utf-8" />
@@ -6,8 +21,31 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
         <title>Sobre mí</title>
+            <style>
+      p {
+        color: purple;
+      }
+    </style>
     </head>
     <body>
         <h2>¿Quien soy?</h2>
+        <p>Mi nombre es {me.name} y vivo en {me.pais}</p>
+        <p>Naci en 2002, mi horoscopo es {me.horoscopo}</p>
+        <p> {
+            me.hobbies.length >= 2 &&
+            <li>Dos de mis hobbies son {me.hobbies[0]} y {me.hobbies[1]}</li>
+            }</p>
+            <p>Mis habilidades son</p>
+            <ul>
+                {skills.map(skill =>
+                    <li>{skill}</li>
+                )}
+            </ul>
+
+            {happy && <p>Me gusta Astro!</p>}
+
+            {finished && <p>Termine el tutorial!</p>}
+
+            {goal === 3? <p>Quiero terminar esto en tres dias</p> : "Mi meta no es en 3 dias."}
     </body>
 </html>
