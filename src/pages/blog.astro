@@ -3,6 +3,7 @@ import '../styles/global.css'
 import Navigation from '../components/Navigation.astro'
 import  Footer  from '../components/Footer.astro';
 import { Header } from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <html lang="en">
@@ -14,9 +15,7 @@ import { Header } from '../components/Header.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<Header/>
-		<h1>Astro</h1>
+	<BaseLayout pageTitle={"Mi Blog"}>
 		<p>Mi blog!!!</p>
 
         <h2>Posts</h2>
@@ -26,9 +25,8 @@ import { Header } from '../components/Header.astro';
             <li><a href="/posts/post-3">Post 2</a></li>
 
         </ol>
-		<Footer/>
 		<script>
 			import "../scripts/menu.js";
 		</script>
-	</body>
+	</BaseLayout>
 </html>
