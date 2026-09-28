@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css'
 
 const me = {
     name:"Herbertia",
@@ -12,6 +13,11 @@ const skills = ["HTML","CSS","JS","Photoshop","Shotcut","Adobe Illustrator"]
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const color = "crimson";
+const fontWeight = "bold";
+const textStyle = "uppercase";
+
 ---
 <html lang="es">
     <head>
@@ -21,9 +27,14 @@ const goal = 3;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
         <title>Sobre mí</title>
-            <style>
+            <style define:vars={{color, fontWeight, textStyle}}>
       p {
         color: purple;
+      }
+      .skill{
+        color:var(--color);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textStyle);
       }
     </style>
     </head>
@@ -38,7 +49,7 @@ const goal = 3;
             <p>Mis habilidades son</p>
             <ul>
                 {skills.map(skill =>
-                    <li>{skill}</li>
+                    <li class="skill">{skill}</li>
                 )}
             </ul>
 
