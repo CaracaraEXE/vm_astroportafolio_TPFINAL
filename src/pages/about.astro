@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css'
+import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
 
 const me = {
     name:"Herbertia",
@@ -39,6 +41,7 @@ const textStyle = "uppercase";
     </style>
     </head>
     <body>
+        <Navigation/>
         <h2>¿Quien soy?</h2>
         <p>Mi nombre es {me.name} y vivo en {me.pais}</p>
         <p>Naci en 2002, mi horoscopo es {me.horoscopo}</p>
@@ -58,5 +61,6 @@ const textStyle = "uppercase";
             {finished && <p>Termine el tutorial!</p>}
 
             {goal === 3? <p>Quiero terminar esto en tres dias</p> : "Mi meta no es en 3 dias."}
-    </body>
+            <Footer/>
+        </body>
 </html>
