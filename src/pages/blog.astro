@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import Navigation from '../components/Navigation.astro'
 import  Footer  from '../components/Footer.astro';
+import { Header } from '../components/Header.astro';
 ---
 
 <html lang="en">
@@ -14,7 +15,7 @@ import  Footer  from '../components/Footer.astro';
 		<title>Astro</title>
 	</head>
 	<body>
-		<Navigation/>
+		<Header/>
 		<h1>Astro</h1>
 		<p>Mi blog!!!</p>
 
@@ -26,5 +27,8 @@ import  Footer  from '../components/Footer.astro';
 
         </ol>
 		<Footer/>
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
