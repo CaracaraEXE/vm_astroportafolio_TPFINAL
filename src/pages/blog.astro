@@ -2,7 +2,9 @@
 import '../styles/global.css'
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostPreview from '../components/PostPreview.astro';
-const allPosts = Object.values(import.meta.glob('./posts/*.md', {eager: true}));
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
 ---
 
 <html lang="en">
@@ -20,7 +22,7 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', {eager: true}));
         <h2>Posts</h2>
         <ol>
         {allPosts.map((post: any) => 
-		<PostPreview url={post.url} title={post.frontmatter.title}/>
+		        <PostPreview url={`/posts/${post.id}/`} title={post.data.title} />
 	)}
         </ol>
 		<script>

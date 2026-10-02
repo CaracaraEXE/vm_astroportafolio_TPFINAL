@@ -2,17 +2,14 @@
 const { frontmatter } = Astro.props;
 import  BaseLayout  from "./BaseLayout.astro";
 ---
+<!-- ... -->
 <BaseLayout pageTitle={frontmatter.title}>
-<h2>{frontmatter.description}</h2>
-<p>Written by {frontmatter.author} in {frontmatter.pubDate.toString().slice(0,10)}</p>
-<img src={frontmatter.image.url} alt="{frontmatter.image.alt}">
-<div class="tags">
-    {frontmatter.tags.map((tag: any) => (
-      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}
-  </div>
-<slot />
-</BaseLayout>
+    <p>{frontmatter.pubDate.toLocaleDateString()}</p>
+    <p><em>{frontmatter.description}</em></p>
+    <p>Written by: {frontmatter.author}</p>
+    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+    </BaseLayout>
+<!-- ... -->
 <style>
   a {
     color: #00539F;
