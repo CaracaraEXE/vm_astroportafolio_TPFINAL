@@ -9,7 +9,8 @@ import  SideMenu  from "../components/sideMenu.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Test</title>
   </head>
-  <body>
+  <body style="display: flex;">
     <SideMenu/>
+    <slot style="flex-direction: column;"/>
   </body>
 </html>
