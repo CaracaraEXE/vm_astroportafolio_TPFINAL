@@ -2,15 +2,27 @@
 import '../styles/global.css'
 import icon from '../svg/schoolblue.svg'
 import { Image } from 'astro:assets';
+import Timelinedate from './timelinedate.astro';
+
+const experiences = [{
+    place:"Instituto San Jose",
+    title:"Bachiller en Ciencias Sociales",
+    date:"MARZO 2016 - NOVIEMBRE 2020"
+},
+{
+    place:"Universidad Maimónides",
+    title:"Licenciatura en Tecnologia Multimedial",
+    date:"MARZO 2022 - ACTUALIDAD"
+}
+];
+
+
 ---
 <style></style>
 <ul id="timeline">
-    <li class="fecha">
-        <div>
-           <Image src={icon} alt={"Icon school"}/>
-        </div>
-        <div>
-            <p>Instituto San Jose villa del parque</p>
-        </div>
-    </li>
+    {
+        experiences.map((exp: any) => (
+           <Timelinedate place={exp.place} title={exp.title} date={exp.date}/>
+        ))
+    }
 </ul>

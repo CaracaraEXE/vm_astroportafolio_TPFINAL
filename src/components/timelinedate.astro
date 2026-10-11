@@ -1,0 +1,16 @@
+---
+import '../styles/global.css'
+import icon from '../svg/schoolblue.svg'
+import { Image } from 'astro:assets';
+const {title, place, date} = Astro.props;
+---
+<li class="bg-fuchsia-900 text-white flex w-[60%] my-10" >
+        <div>
+           <Image src={icon} alt={"Icon school"}/>
+        </div>
+        <div>
+            <p>{title}</p>
+            <p>{place}</p>
+            <p>{date}</p>
+        </div>
+    </li>
