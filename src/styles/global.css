@@ -3,3 +3,25 @@
 *{
     box-sizing: border-box;
 }
+
+.sub-menu{
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 300ms ease-in-out;
+
+  > div{
+    overflow: hidden;
+  }
+}
+
+.sub-menu.show{
+  grid-template-rows: 1fr;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}

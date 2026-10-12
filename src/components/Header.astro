@@ -2,13 +2,15 @@
 import SideMenu from "./sideMenu.astro";
 import SocMedNav from "./socMedNav.astro";
 import Asterisk from '../assets/svg/asterisk.svg';
-
+import "../styles/global.css";
 
 ---
-<header class="lg:flex lg:flex-col lg:justify-between lg:w-4xl lg:p-5 lg:pl-3">
-    <div>
-        <a href="/"><Asterisk width={30} height={30}/></a>
-        <SideMenu/>
-    </div>
+<header class="lg:flex lg:flex-col lg:max-h-lvh lg:flex-end lg:w-3xl lg:p-5 p-5">
+        <button class="dropdown-opener"><Asterisk width={30} height={30}/></button>
+    <div class="sub-menu">
+        <div class="w-fit flex flex-col gap-5">
+    <SideMenu/>
     <SocMedNav/>
+    </div>
+    </div>
 </header>

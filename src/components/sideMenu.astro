@@ -1,7 +1,7 @@
 ---
 import Icon from '../assets/svg/asterisk.svg';
+import Arrow from '../assets/svg/charm--arrow-down-right.svg';
 import '../styles/global.css';
-import SocMedNav from './socMedNav.astro';
 
 ---
 <style>
@@ -10,26 +10,32 @@ import SocMedNav from './socMedNav.astro';
         font-family: var(--font-michroma);
     }
 
-    a{
+    a, button{
         display: flex;
         width:fit-content;
         align-items: center;
         gap:5px;
         height: 2em;
         transition:font-weight 0.25s ease;
+        font-weight: bold;
     }
 
-    a:hover{
-        color:blueviolet;
-        font-weight: bold;
+    button{
+      gap:0;
+    }
+
+    li a:hover, button:hover{
+      color:blueviolet;
+      font-weight: bold;
     }
 
     .icon {
   opacity: 0;
   transition: opacity 0.3s ease;
+  color:black;
 }
 
-li:hover .icon {
+button:hover .icon, a:hover .icon {
   opacity: 1;
 }
 
@@ -49,63 +55,33 @@ li:hover .icon {
   animation: 1.5s fadeInUp;
 }
 
-li{
-  font-size: 0.75em;
-}
-
-.sub-menu{
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 300ms ease-in-out;
-
-  > div{
-    overflow: hidden;
-  }
-}
-
-.sub-menu.show{
-  grid-template-rows: 1fr;
-}
-
 </style>
-<nav>
+<script>
+  import "../scripts/dropdown.js"
+</script>
+<nav class="lg:mt-5">
     <ul>
         <li>
-          <a href="/about" class="font-bold" id="aboutbutton"><Icon width={15} height={15}  class="icon"/>Sobre mí</a>
-        <button class="dropdown-opener">Open</button>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em]"><Arrow width={20} height={25} fill={"currentColor"} class="lg:icon cursor-pointer scale-125"/><a href="/about">Sobre mí</a></button>
           <ul class="ml-5 sub-menu">
           <div>
-            <li><a href="/about#bio"><Icon width={15} height={15}  class="icon"/><span class="hvr-underline-from-left">Biografía</span></a></li>
-            <li><a href="/about#past"><Icon width={15} height={15}  class="icon"/>Experiencia</a></li>
-            <li><a href="/about#skills"><Icon width={15} height={15}  class="icon"/>Habilidades</a></li>
+            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/><span class="hvr-underline-from-left">Experiencia</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/><span class="hvr-underline-from-left">Habilidades</span></a></li>
           </div>
           </ul>
         </li>
         <li>
-          <a href="/works" class="font-bold" id="worksbutton"><Icon width={15} height={15}  class="icon"/>Proyectos</a>
-          <button class="dropdown-opener">Open</button>
-
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em]"><Arrow width={20} height={20} class="lg:icon scale-125"/><a href="/about">Sobre mí</a></button>
           <ul class="ml-5 sub-menu">
-            <div>
-              <li><a href="/about#bio"><Icon width={15} height={15}  class="icon"/><span class="hvr-underline-from-left">Audio</span></a></li>
-              <li><a href="/about#past"><Icon width={15} height={15}  class="icon"/>Video</a></li>
-                            <li><a href="/about#past"><Icon width={15} height={15}  class="icon"/>Image</a></li>
-            </div>
+          <div>
+            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/>Experiencia</a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/>Habilidades</a></li>
+          </div>
           </ul>
         </li>
-        <li><a href="/links" class="font-bold"><Icon width={15} height={15}  class="icon"/>Links</a></li>
-        <li><a href="/souvenir" class="font-bold"><Icon width={15} height={15}  class="icon"/>Souvenir</a></li>
+        <li class="text-2xl lg:text-[1em]"><a href="/links" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/>Links</a></li>
+        <li class="text-2xl lg:text-[1em]"><a href="/souvenir" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/>Souvenir</a></li>
     </ul>
 </nav>
-<script>
-    const dropBtns = document.querySelectorAll(".dropdown-opener");
-
-    dropBtns.forEach((btn) => {
-      btn.addEventListener('click',() => {
-        const subMenu = btn.nextElementSibling;
-        subMenu? subMenu.classList.toggle('show') : "";
-      })
-    })
-
-    console.log(dropBtns);
-</script>
