@@ -1,0 +1,14 @@
+---
+import SideMenu from "./sideMenu.astro";
+import SocMedNav from "./socMedNav.astro";
+import Asterisk from '../assets/svg/asterisk.svg';
+
+
+---
+<header class="lg:flex lg:flex-col lg:justify-between lg:w-4xl lg:p-5 lg:pl-3">
+    <div>
+        <a href="/"><Asterisk width={30} height={30}/></a>
+        <SideMenu/>
+    </div>
+    <SocMedNav/>
+</header>

@@ -1,17 +1,30 @@
 ---
-import  SideMenu  from "../components/sideMenu.astro";
+import Header from "../components/Header.astro";
 import '../styles/global.css'
+import { Font } from "astro:assets";
+
 ---
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+    *{
+        font-family: var(--font-michroma);
+    }
+</style>
 <html>
     <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+        <Font cssVariable="--font-michroma"/>
     <title>Test</title>
   </head>
-  <body style="display: flex;">
-    <SideMenu/>
-    <slot style="flex-direction: column;"/>
+  <body class="flex lg:max-h-lvh">
+    <Header/>
+    <slot class="flex flex-col" />
   </body>
 </html>

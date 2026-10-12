@@ -1,6 +1,7 @@
 ---
 import Icon from '../assets/svg/asterisk.svg';
 import '../styles/global.css';
+import SocMedNav from './socMedNav.astro';
 
 ---
 <style>
@@ -32,6 +33,7 @@ li:hover .icon {
   opacity: 1;
 }
 
+
 @keyframes fadeInUp {
   0% {
     transform: translateY(100%);
@@ -47,17 +49,63 @@ li:hover .icon {
   animation: 1.5s fadeInUp;
 }
 
+li{
+  font-size: 0.75em;
+}
+
+.sub-menu{
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 300ms ease-in-out;
+
+  > div{
+    overflow: hidden;
+  }
+}
+
+.sub-menu.show{
+  grid-template-rows: 1fr;
+}
+
 </style>
 <nav>
     <ul>
-        <li><a href="/about" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Sobre mí</a></li>
-        <ul class="ml-20">
-            <li><a href="/about#bio"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Biografía</a></li>
-            <li><a href="/about#past"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Experiencia</a></li>
-            <li><a href="/about#skills"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Habilidades</a></li>
-        </ul>
-        <li><a href="/works" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Proyectos</a></li>
-        <li><a href="/links" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Links</a></li>
-        <li><a href="/souvenir" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Souvenir</a></li>
+        <li>
+          <a href="/about" class="font-bold" id="aboutbutton"><Icon width={15} height={15}  class="icon"/>Sobre mí</a>
+        <button class="dropdown-opener">Open</button>
+          <ul class="ml-5 sub-menu">
+          <div>
+            <li><a href="/about#bio"><Icon width={15} height={15}  class="icon"/><span class="hvr-underline-from-left">Biografía</span></a></li>
+            <li><a href="/about#past"><Icon width={15} height={15}  class="icon"/>Experiencia</a></li>
+            <li><a href="/about#skills"><Icon width={15} height={15}  class="icon"/>Habilidades</a></li>
+          </div>
+          </ul>
+        </li>
+        <li>
+          <a href="/works" class="font-bold" id="worksbutton"><Icon width={15} height={15}  class="icon"/>Proyectos</a>
+          <button class="dropdown-opener">Open</button>
+
+          <ul class="ml-5 sub-menu">
+            <div>
+              <li><a href="/about#bio"><Icon width={15} height={15}  class="icon"/><span class="hvr-underline-from-left">Audio</span></a></li>
+              <li><a href="/about#past"><Icon width={15} height={15}  class="icon"/>Video</a></li>
+                            <li><a href="/about#past"><Icon width={15} height={15}  class="icon"/>Image</a></li>
+            </div>
+          </ul>
+        </li>
+        <li><a href="/links" class="font-bold"><Icon width={15} height={15}  class="icon"/>Links</a></li>
+        <li><a href="/souvenir" class="font-bold"><Icon width={15} height={15}  class="icon"/>Souvenir</a></li>
     </ul>
 </nav>
+<script>
+    const dropBtns = document.querySelectorAll(".dropdown-opener");
+
+    dropBtns.forEach((btn) => {
+      btn.addEventListener('click',() => {
+        const subMenu = btn.nextElementSibling;
+        subMenu? subMenu.classList.toggle('show') : "";
+      })
+    })
+
+    console.log(dropBtns);
+</script>
