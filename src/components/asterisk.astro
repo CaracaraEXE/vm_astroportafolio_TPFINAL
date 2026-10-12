@@ -1,0 +1,18 @@
+---
+import type { SvgComponent } from "astro/types";
+import Asterisk from '../svg/asterisk.svg'
+
+interface Link {
+  url: string;
+  text: string;
+  icon: SvgComponent;
+}
+
+const links: Link[] = [
+  {
+    url: "/",
+    text: "Asterisk",
+    icon: Asterisk,
+  },
+];
+---

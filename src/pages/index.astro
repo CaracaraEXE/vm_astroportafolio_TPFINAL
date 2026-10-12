@@ -1,3 +1,57 @@
 ---
-import  BaseLayout  from "../layouts/BaseLayout.astro";
+import { Image } from 'astro:assets';
+import '../styles/global.css';
+import '../styles/hover.css';
+import Icon from '../svg/asterisk.svg'
+
 ---
+<style>
+    a{
+        display: flex;
+        width:fit-content;
+        align-items: center;
+        gap:5px;
+        height: 2em;
+        transition:font-weight 0.25s ease;
+    }
+
+    a:hover{
+        color:blueviolet;
+        font-weight: bold;
+    }
+
+    .icon {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+li:hover .icon {
+  opacity: 1;
+}
+
+</style>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Test</title>
+  </head>
+  <body class="h-lvh flex justify-center items-center">
+    <div class="bg-amber-200 h-fit flex w-[20em] gap-2 items-center rounded-lg p-25" style="padding: 2em;">
+        <div>
+            <h1>Herbertia Lahué</h1>
+        </div>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="/about"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/> <span class="hvr-underline-from-left">Sobre Mí</span></a></li>
+                <li><a href="/works"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/> <span class="hvr-underline-from-left">Proyectos</span></a></li>
+                <li><a href="/links"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/> <span class="hvr-underline-from-left">Directorio</span></a></li>
+                 <li><a href="/souvenir"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/> <span class="hvr-underline-from-left">Souvenir</span></a></li>
+            </ul>
+        </nav>
+    </div>
+  </body>
+</html>
