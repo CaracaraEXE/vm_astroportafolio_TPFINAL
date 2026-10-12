@@ -1,18 +1,63 @@
+---
+import Icon from '../assets/svg/asterisk.svg';
+import '../styles/global.css';
+
+---
 <style>
-    a:hover{
-        color:purple;
+
+    *{
+        font-family: var(--font-michroma);
     }
+
+    a{
+        display: flex;
+        width:fit-content;
+        align-items: center;
+        gap:5px;
+        height: 2em;
+        transition:font-weight 0.25s ease;
+    }
+
+    a:hover{
+        color:blueviolet;
+        font-weight: bold;
+    }
+
+    .icon {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+li:hover .icon {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
 </style>
 <nav>
     <ul>
-        <li><a href="/about">Sobre mí</a></li>
-        <ul>
-            <li><a href="/about#bio">Biografía</a></li>
-            <li><a href="/about#past">Experiencia</a></li>
-            <li><a href="/about#skills">Habilidades</a></li>
+        <li><a href="/about" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Sobre mí</a></li>
+        <ul class="ml-20">
+            <li><a href="/about#bio"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Biografía</a></li>
+            <li><a href="/about#past"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Experiencia</a></li>
+            <li><a href="/about#skills"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Habilidades</a></li>
         </ul>
-        <li><a href="/works">Proyectos</a></li>
-        <li><a href="/links">Links</a></li>
-        <li><a href="/souvenir">Souvenir</a></li>
+        <li><a href="/works" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Proyectos</a></li>
+        <li><a href="/links" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Links</a></li>
+        <li><a href="/souvenir" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Souvenir</a></li>
     </ul>
 </nav>

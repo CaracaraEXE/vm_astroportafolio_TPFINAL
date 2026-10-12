@@ -1,0 +1,19 @@
+---
+import IconIG from "../assets/svg/socialmedia/bi--instagram.svg"
+import IconYT from "../assets/svg/socialmedia/bi--youtube.svg"
+import IconMail from "../assets/svg/socialmedia/bi--envelope.svg"
+import '../styles/hover.css';
+---
+<style>
+    a{
+        transition: color 0.5s ease;
+    }
+    a:hover{
+        color:blueviolet;
+    }
+</style>
+<nav class="flex gap-2">
+    <a href="https://www.instagram.com/herbertia_art/" title="Instagram" class="hvr-icon-shrink"><IconIG fill={"currentColor"} width={20} height={20} class="hvr-icon"/></a>
+    <a href="https://www.youtube.com/@Herbertia_Art" title="Youtube" class="hvr-icon-shrink"><IconYT fill={"currentColor"} width={22} height={22} class="hvr-icon"/></a>
+    <a href="mailto:vmobywork@gmail.com" title="Gmail" class="hvr-icon-shrink"><IconMail fill={"currentColor"} width={20} height={20} class="hvr-icon"/></a>
+</nav>
