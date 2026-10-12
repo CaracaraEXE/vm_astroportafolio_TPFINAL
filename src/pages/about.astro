@@ -3,10 +3,36 @@ import  BaseLayout  from "../layouts/BaseLayout.astro";
 import Timeline from "../components/timeline.astro";
 
 ---
+<style>
+    p{
+        margin-bottom: 1em;
+    }
 
+    @keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+@media screen and (min-width: 636px) {
+  p{
+    font-size: 0.85em;
+  }
+}
+
+</style>
 <BaseLayout>
-    <div class="lg:max-h-lvh lg:overflow-scroll">
-        <header class="pt-5">
+    <div class="lg:max-h-lvh lg:overflow-scroll px-15 pt-5 fadeInUp-animation">
+        <header>
             <h1>SOBRE MÍ</h1>
         </header>
     <h2 id="bio">BIO</h2>

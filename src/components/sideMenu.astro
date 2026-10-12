@@ -14,7 +14,7 @@ import '../styles/global.css';
         display: flex;
         width:fit-content;
         align-items: center;
-        gap:5px;
+        gap:2px;
         height: 2em;
         transition:font-weight 0.25s ease;
         font-weight: bold;
@@ -30,10 +30,8 @@ import '../styles/global.css';
     }
 
     .icon {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color:black;
-}
+      transition: opacity 0.3s ease;
+    }
 
 button:hover .icon, a:hover .icon {
   opacity: 1;
@@ -62,26 +60,26 @@ button:hover .icon, a:hover .icon {
 <nav class="lg:mt-5">
     <ul>
         <li>
-          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em]"><Arrow width={20} height={25} fill={"currentColor"} class="lg:icon cursor-pointer scale-125"/><a href="/about">Sobre mí</a></button>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em]"><Arrow width={20} height={25} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 cursor-pointer scale-125"/><a href="/about">Sobre mí</a></button>
           <ul class="ml-5 sub-menu">
           <div>
-            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
-            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/><span class="hvr-underline-from-left">Experiencia</span></a></li>
-            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/><span class="hvr-underline-from-left">Habilidades</span></a></li>
+            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Experiencia</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Habilidades</span></a></li>
           </div>
           </ul>
         </li>
         <li>
-          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em]"><Arrow width={20} height={20} class="lg:icon scale-125"/><a href="/about">Sobre mí</a></button>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em]"><Arrow width={20} height={20} class="icon opacity-100 lg:opacity-0 scale-125"/><a href="/about">Sobre mí</a></button>
           <ul class="ml-5 sub-menu">
           <div>
-            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
-            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/>Experiencia</a></li>
-            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/>Habilidades</a></li>
+            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Experiencia</a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Habilidades</a></li>
           </div>
           </ul>
         </li>
-        <li class="text-2xl lg:text-[1em]"><a href="/links" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/>Links</a></li>
-        <li class="text-2xl lg:text-[1em]"><a href="/souvenir" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="lg:icon scale-95"/>Souvenir</a></li>
+        <li class="text-2xl lg:text-[1em]"><a href="/links" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Links</a></li>
+        <li class="text-2xl lg:text-[1em]"><a href="/souvenir" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Souvenir</a></li>
     </ul>
 </nav>
