@@ -13,6 +13,33 @@ import { Font } from "astro:assets";
     *{
         font-family: var(--font-michroma);
     }
+
+   @keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+div{
+  padding: 2.5em;
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+@media screen and (min-width: 636px) {
+  div{
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+  }
+}
+
 </style>
 <html>
     <head>
@@ -25,6 +52,8 @@ import { Font } from "astro:assets";
   </head>
   <body class="lg:flex lg:max-h-lvh">
     <Header/>
+    <div class="lg:max-h-lvh lg:overflow-scroll fadeInUp-animation">
     <slot class="flex flex-col" />
+    </div>
   </body>
 </html>
