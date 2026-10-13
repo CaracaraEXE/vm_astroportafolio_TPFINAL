@@ -25,7 +25,7 @@ import '../styles/global.css';
     }
 
     li a:hover, button:hover{
-      color:blueviolet;
+      color:darkmagenta;
       font-weight: bold;
     }
 
@@ -57,9 +57,11 @@ button:hover .icon, a:hover .icon {
   import "../scripts/dropdown.js"
 </script>
 <nav class="pt-5 lg:pl-2.5">
+  
     <ul>
+        <li class="text-2xl lg:text-[1em]"><a href="/" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Inicio</a></li>
         <li>
-          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em]"><Arrow width={20} height={25} fill={"currentColor"} class="icon opacity-100 cursor-pointer scale-125"/><a href="/about">Sobre mí</a></button>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em] hvr-icon-down"><Arrow width={20} height={25} fill={"currentColor"} class="icon opacity-100 cursor-pointer scale-125 hvr-icon"/>Sobre mí</button>
           <ul class="ml-5 sub-menu">
           <div>
             <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
@@ -69,7 +71,7 @@ button:hover .icon, a:hover .icon {
           </ul>
         </li>
         <li>
-          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em]"><Arrow width={20} height={20} class="icon opacity-100 scale-125"/><a href="/about">Sobre mí</a></button>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em] hvr-icon-down"><Arrow width={20} height={20} class="icon hvr-icon opacity-100 scale-125 cursor-pointer"/><a href="/about">Proyectos</a></button>
           <ul class="ml-5 sub-menu">
           <div>
             <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
