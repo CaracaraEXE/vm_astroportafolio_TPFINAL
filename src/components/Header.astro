@@ -3,12 +3,12 @@ import SideMenu from "./sideMenu.astro";
 import SocMedNav from "./socMedNav.astro";
 import Asterisk from '../assets/svg/asterisk.svg';
 import "../styles/global.css";
-
+import "../styles/hover.css"
 ---
-<header class="lg:flex lg:flex-col lg:max-h-lvh lg:flex-end lg:w-3xl lg:p-5 p-5">
-        <button class="dropdown-opener"><Asterisk width={30} height={30}/></button>
+<header class="lg:flex lg:flex-col lg:max-h-lvh lg:flex-end lg:w-2xl lg:pl-6 p-5">
+        <button class="dropdown-opener cursor-pointer hvr-icon-rotate"><Asterisk width={30} height={30} fill={"currentColor"} class="hover:text-violet-800 hvr-icon"/></button>
     <div class="sub-menu">
-        <div class="w-fit flex flex-col gap-5">
+        <div class="w-fit flex flex-col gap-5 lg:overflow-visible">
     <SideMenu/>
     <SocMedNav/>
     </div>
