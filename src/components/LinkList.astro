@@ -1,11 +1,13 @@
 ---
-import Arrow from '.././assets/svg/charm--arrow-down.svg'
+import List from '../assets/linklist.json'
+import LinkItem from './LinkItem.astro';
+
+const categories = [...new Set(List.map(item => item.category))];
+console.log(categories);
+
 ---
-<input type="checkbox" id="#_" class="hidden peer"/>
-<label for="#_">
-<h3>YAY</h3>
-<Arrow width={25} height={25} class="peer-checked:rotate-180 transition-transform duration-200"/>
-</label>
-<div class="overflow-hidden max-h-0 peer-checked:max-h-screen transition-all duration-500">
-<p>Test</p>
-</div>
+<section>
+{categories.map(cat =>
+    <LinkItem category={cat}/>
+)}
+</section>
