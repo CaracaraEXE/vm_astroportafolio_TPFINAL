@@ -236,7 +236,7 @@
 "url":"https://invidious.io/",
 "name":"Invidious",
 "desc":"Alternativa codigo abierto de Youtube",
-"category":"Software/Alternativas CO"
+"category":"Software"
 },
 {
 "url":"https://ourworldofpixels.com/",
@@ -266,7 +266,7 @@
 "url":"https://www.ecosia.org/",
 "name":"Ecosia",
 "desc":"Alternativa a Google que planta arboles con cada busqueda",
-"category":"Software/Alternativas CO"
+"category":"Software"
 },
 {
 "url":"https://radio.garden/",
@@ -374,19 +374,19 @@
 "url":"https://pueblosoriginarios.com/",
 "name":"Pueblos Originarios",
 "desc":"Sitio informativo sobre los pueblos originarios de America, incluido Argentina",
-"category":"Escritura"
+"category":"Sitios Informativos"
 },
 {
 "url":"https://inkarnate.com/",
 "name":"Inkarnate",
 "desc":"Creador de mapas de fantasía",
-"category":"Escritura"
+"category":"Cosas Divertidas"
 },
 {
 "url":"https://librecreative.neocities.org/",
 "name":"Libre Creative",
 "desc":"Listado de software de Codigo Abierto para varios rubros",
-"category":"Software/Alternativas CO"
+"category":"Software"
 },
 {
 "url":"https://wordcounter.net/",
@@ -416,25 +416,25 @@
 "url":"https://codepen.io/stephenpaton-tech/full/JjRvGmY",
 "name":"Custom Scrollbar Maker",
 "desc":"Personaliza y crea el CSS de la barra desplazadora",
-"category":"Escritura"
+"category":"Programación"
 },
 {
 "url":"https://tympanus.net/codrops/",
 "name":"Codrops",
 "desc":"Contiene montones de tutoriales y demos de codigo y diseño web, tanto moderno como retro",
-"category":"Escritura"
+"category":"Programación"
 },
 {
 "url":"https://opentoonz.github.io/es/index.html",
 "name":"Open Toonz",
 "desc":"Software gratuito de animación",
-"category":"Software/Alternativas CO"
+"category":"Software"
 },
 {
 "url":"https://www.shotcut.org/",
 "name":"Shotcut",
 "desc":"Software de edición de video",
-"category":"Software/Alternativas CO"
+"category":"Software"
 },
 {
 "url":"https://www.diffchecker.com/",

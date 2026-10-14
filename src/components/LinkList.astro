@@ -1,12 +1,13 @@
 ---
 import List from '../assets/linklist.json'
 import LinkItem from './LinkItem.astro';
+import '.././styles/global.css'
 
 const categories = [...new Set(List.map(item => item.category))];
 console.log(categories);
 
 ---
-<section>
+<section class="lg:w-[80%]">
 {categories.map(cat =>
     <LinkItem category={cat}/>
 )}
