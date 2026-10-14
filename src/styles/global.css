@@ -18,6 +18,14 @@
   grid-template-rows: 1fr;
 }
 
+svg{
+  transition: transform 0.25s ease-in !important
+}
+
+.rotate svg{
+  transform: rotate(180deg) !important
+}
+
 h1{
     font-size: 2em;
     color:darkmagenta;

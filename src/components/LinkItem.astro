@@ -1,0 +1,28 @@
+---
+import Arrow from '.././assets/svg/charm--arrow-down.svg'
+import Icon from '../assets/svg/asterisk.svg';
+import List from '../assets/linklist.json';
+import '../styles/global.css';
+
+const {category} = Astro.props;
+
+const links = List.filter(item => item.category === category);
+---
+<script>
+    import '../scripts/dropdown.js'
+</script>
+<div class="mb-2.5">
+    <button class="dropdown-opener text-1xl flex justify-between hover:bg-fuchsia-900 cursor-pointer bg-fuchsia-950  text-white w-full px-5 py-5 lg:py-2.5 transform-all duration-75">
+    <h3>{category}</h3>
+    <Arrow width={20} height={20}/>
+    </button>
+    <ul class="sub-menu">
+        <div>
+            {
+                links.map(link =>
+                    <li class="flex flex-col py-2"><a href={link.url} class="border-b-2 border-fuchsia-900 border-dotted text-[1.25em] lg:text-[1em] text-fuchsia-900 uppercase leading-6 flex gap-1 font-black hover:tracking-wide transform-all duration-75"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100"/> {link.name}</a><span class="text-[0.75em]">{link.desc}</span></li>
+                )
+            }
+        </div>
+    </ul>
+</div>

@@ -37,6 +37,11 @@ div{
     padding-top: 1.5em;
     padding-left: 1.5em;
   }
+
+    body{
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 }
 
 </style>
@@ -47,11 +52,11 @@ div{
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
         <Font cssVariable="--font-michroma"/>
-    <title>Test</title>
+    <title>Portafolio Herbertia</title>
   </head>
-  <body class="lg:flex lg:max-h-lvh">
+  <body>
     <Header/>
-    <div class="lg:max-h-lvh lg:overflow-scroll fadeInUp-animation">
+    <div class="lg:overflow-scroll fadeInUp-animation">
     <slot class="flex flex-col" />
     </div>
   </body>

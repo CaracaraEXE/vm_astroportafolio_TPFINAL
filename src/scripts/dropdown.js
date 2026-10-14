@@ -4,6 +4,7 @@
       btn.addEventListener('click',() => {
         const subMenu = btn.nextElementSibling;
         subMenu? subMenu.classList.toggle('show') : "";
+        btn.classList.toggle('rotate');
       })
     })
 
