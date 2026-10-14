@@ -290,60 +290,156 @@
 "url":"https://frutigeraeroarchive.org/",
 "name":"Frutiger Aero Archive",
 "desc":"Sitio informativo sobre la estetica Frutiger Aero",
+"category":"Ilustración/Edición"
+},
+{
+"url":"https://cari.institute/aesthetics",
+"name":"CARI Aesthetics",
+"desc":"Sitio informativo sobre distintas esteticas de diseño.",
+"category":"Sitios Informativos"
+},
+{
+"url":"https://www.ilustradoresargentinos.com/",
+"name":"Ilustradores Argentinos",
+"desc":"Sitio informativo sobre artistas argentinos",
+"category":"Sitios Informativos"
+},
+{
+"url":"https://halftonemaker.com/es",
+"name":"Halftone Maker",
+"desc":"Añade el efecto 'halftone' a las imagenes",
+"category":"Ilustración/Edición"
+},
+{
+"url":"https://doooot.pages.dev/about",
+"name":"Dooo0t",
+"desc":"Edita imagenes y añade un efecto de 'puntos'",
+"category":"Ilustración/Edición"
+},
+{
+"url":"https://www.koefo.com/",
+"name":"Koefo",
+"desc":"Corta imagenes para que se vean en carrousels de IG",
+"category":"Ilustración/Edición"
+},
+{
+"url":"https://delphi.tools/",
+"name":"Delphi Tools",
+"desc":"Set de herramientas gratuitas y de CO",
+"category":"Ilustración/Edición"
+},
+{
+"url":"https://fishinkblog.com/",
+"name":"Fishink",
+"desc":"Blog con diversos ilustradores, sirve para inspiración",
+"category":"Otros Creativos"
+},
+{
+"url":"https://clipart.studio/",
+"name":"Clipart Studio",
+"desc":"Recorta partes de PDF/imagenes y crea un collage",
+"category":"Ilustración/Edición"
+},
+{
+"url":"https://www.springhole.net/index.html",
+"name":"Springhole",
+"desc":"Contiene tips de escritura",
+"category":"Escritura"
+},
+{
+"url":"https://www.posemaniacs.com/es",
+"name":"Posemaniacs",
+"desc":"Sitio con poses para practicar dibujo",
+"category":"Ilustración/Edición"
+},
+{
+"url":"https://randomcolour.com/",
+"name":"Random Colour",
+"desc":"Muestra un color random al refrescar",
+"category":"Cosas Divertidas"
+},
+{
+"url":"https://www.thesaurus.com/",
+"name":"Thesaurus",
+"desc":"Busca antonimos y sinonimos",
+"category":"Escritura"
+},
+{
+"url":"https://randomword.com/",
+"name":"Random Word",
+"desc":"Muestra una palabra al azar",
+"category":"Cosas Divertidas"
+},
+{
+"url":"https://pueblosoriginarios.com/",
+"name":"Pueblos Originarios",
+"desc":"Sitio informativo sobre los pueblos originarios de America, incluido Argentina",
+"category":"Escritura"
+},
+{
+"url":"https://inkarnate.com/",
+"name":"Inkarnate",
+"desc":"Creador de mapas de fantasía",
+"category":"Escritura"
+},
+{
+"url":"https://librecreative.neocities.org/",
+"name":"Libre Creative",
+"desc":"Listado de software de Codigo Abierto para varios rubros",
 "category":"Software/Alternativas CO"
 },
 {
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
+"url":"https://wordcounter.net/",
+"name":"Word Counter",
+"desc":"Cuenta las palabras en un texto",
+"category":"Escritura"
+},
+{
+"url":"https://mycolor.space/",
+"name":"ColorSpace",
+"desc":"Genera paletas de colores a partir de un color",
+"category":"Ilustración/Edición"
+},
+{
+"url":"https://scripted.neocities.org/",
+"name":"Scripted",
+"desc":"Tutoriales y codigos de programación",
+"category":"Programación"
+},
+{
+"url":"https://csswarp.eleqtriq.com/",
+"name":"CSS Wrap",
+"desc":"Encaja el texto en una curva y crea codigo CSS del mismo",
+"category":"Programación"
+},
+{
+"url":"https://codepen.io/stephenpaton-tech/full/JjRvGmY",
+"name":"Custom Scrollbar Maker",
+"desc":"Personaliza y crea el CSS de la barra desplazadora",
+"category":"Escritura"
+},
+{
+"url":"https://tympanus.net/codrops/",
+"name":"Codrops",
+"desc":"Contiene montones de tutoriales y demos de codigo y diseño web, tanto moderno como retro",
+"category":"Escritura"
+},
+{
+"url":"https://opentoonz.github.io/es/index.html",
+"name":"Open Toonz",
+"desc":"Software gratuito de animación",
 "category":"Software/Alternativas CO"
 },
 {
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
+"url":"https://www.shotcut.org/",
+"name":"Shotcut",
+"desc":"Software de edición de video",
 "category":"Software/Alternativas CO"
 },
 {
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
-"category":"Software/Alternativas CO"
-},
-{
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
-"category":"Software/Alternativas CO"
-},
-{
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
-"category":"Software/Alternativas CO"
-},
-{
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
-"category":"Software/Alternativas CO"
-},
-{
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
-"category":"Software/Alternativas CO"
-},
-{
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
-"category":"Software/Alternativas CO"
-},
-{
-"url":"https://www.ecosia.org/",
-"name":"Ecosia",
-"desc":"Alternativa a Google que planta arboles con cada busqueda",
-"category":"Software/Alternativas CO"
+"url":"https://www.diffchecker.com/",
+"name":"Diffchecker",
+"desc":"Compara textos y resalta diferencias",
+"category":"Escritura"
 }
 ]
