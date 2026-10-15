@@ -1,0 +1,174 @@
+[{
+    "title":"Sunny! Stopmpotion",
+    "year":"2023",
+    "category":["animación","video"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"Black Mirror - White Christmas (Ilustración)",
+    "year":"2023",
+    "category":["ilustración"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":"Dibujo de dos ojos"
+    },
+    "extUrl":""
+},
+{
+    "title":"Poster Delicatessen",
+    "year":"2023",
+    "category":["ilustración","diseño"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":"Poster claroscuro iluminado por los bordes de una escalera y la planta baja, donde se halla la sombra de una figura humana con cuchillos."
+    },
+    "extUrl":""
+},
+{
+    "title":"La Larga Historia de la Humanidad",
+    "year":"2025",
+    "category":["video"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"Gingko bilboa - Spread de revista",
+    "year":"2022",
+    "category":["diseño"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":"Diseño de revista con texto hablando sobre el gingko"
+    },
+    "extUrl":""
+},
+{
+    "title":"Ogaraití",
+    "year":"2024",
+    "category":["diseño","ilustración"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":"Infografia interactiva e ilustrada sobre la leyenda guarani del hornero."
+    },
+    "extUrl":""
+},
+{
+    "title":"Torito",
+    "year":"2022",
+    "category":["diseño","ilustración"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"Waldi - Munich 1972",
+    "year":"2024",
+    "category":["animación","video"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"7mo Piso - Animaciones",
+    "year":"2025",
+    "category":["animación","ilustración","diseño"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"TEA Time - Cafetería inclusiva",
+    "year":"2025",
+    "category":["diseño"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"Video Introductorio",
+    "year":"2024",
+    "category":["video","animación","diseño"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"Maimo GAME ROOM",
+    "year":"2024",
+    "category":["video","animación"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"El Sueño - Composición Original",
+    "year":"2024",
+    "category":["audio"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+},
+{
+    "title":"Radiomontaje",
+    "year":"2023",
+    "category":["audio"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    }
+},
+{
+    "title":"Página Bariloche",
+    "year":"2023",
+    "category":["programacion"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    }
+},
+{
+    "title":"Cafetera SMEG",
+    "year":"2024",
+    "category":["modelados"],
+    "desc":"test",
+    "image":{
+        "url":"",
+        "alt":""
+    },
+    "extUrl":""
+}]
