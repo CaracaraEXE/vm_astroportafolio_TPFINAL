@@ -22,7 +22,7 @@ import { Font } from "astro:assets";
   }
 }
 
-div{
+main{
   padding-top: 1em;
   padding-right: 2em;
   padding-left: 2em;
@@ -33,7 +33,7 @@ div{
 }
 
 @media screen and (min-width: 636px) {
-  div{
+  main{
     padding-top: 1.5em;
     padding-left: 1.5em;
   }
@@ -56,8 +56,8 @@ div{
   </head>
   <body>
     <Header/>
-    <div class="lg:overflow-scroll fadeInUp-animation">
+    <main class="lg:overflow-scroll fadeInUp-animation">
     <slot class="flex flex-col" />
-    </div>
+    </main>
   </body>
 </html>
