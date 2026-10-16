@@ -1,0 +1,66 @@
+   const canvas = document.getElementById("drawingCanvas");
+const ctx = canvas.getContext("2d");
+const colorPicker = document.getElementById("colorPicker");
+const brushSize = document.getElementById("brushSize");
+const clearBtn = document.getElementById("clearBtn");
+const saveBtn = document.getElementById("saveBtn");
+let isDrawing = false;
+
+function resizeCanvas() {
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
+}
+
+function getMousePos(canvas, e) {
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+  return {
+    x: (e.clientX - rect.left) * scaleX,
+    y: (e.clientY - rect.top) * scaleY,
+  };
+}
+
+function startDrawing(e) {
+  isDrawing = true;
+  draw(e);
+}
+
+function stopDrawing() {
+  isDrawing = false;
+  ctx.beginPath();
+}
+
+function draw(e) {
+  if (!isDrawing) return;
+  ctx.lineWidth = brushSize.value;
+  ctx.lineCap = "round";
+  ctx.strokeStyle = colorPicker.value;
+  const pos = getMousePos(canvas, e);
+  ctx.lineTo(pos.x, pos.y);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(pos.x, pos.y);
+}
+
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function saveDrawing() {
+  const dataURL = canvas.toDataURL("image/png");
+  const link = document.createElement("a");
+  link.download = "drawing.png";
+  link.href = dataURL;
+  link.click();
+}
+
+window.addEventListener("resize", resizeCanvas);
+canvas.addEventListener("mousedown", startDrawing);
+canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("mouseup", stopDrawing);
+canvas.addEventListener("mouseout", stopDrawing);
+clearBtn.addEventListener("click", clearCanvas);
+saveBtn.addEventListener("click", saveDrawing);
+// Initialize canvas size
+resizeCanvas();
