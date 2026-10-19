@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import '.././styles/pages.css'
+import GBForm from "../components/GBForm.astro";
 
 ---
 <BaseLayout>
@@ -10,4 +11,6 @@ import '.././styles/pages.css'
     <p>Usa el siguiente form para mandar tu mensaje, ¡Lo verás expuesto acá!</p>
 
     <hr>
+
+    <GBForm client:load/>
 </BaseLayout>
