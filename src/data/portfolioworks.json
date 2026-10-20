@@ -14,32 +14,36 @@
     "year":"2023",
     "category":["ilustración"],
     "desc":"test",
-    "image":{
-        "url":"",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/eyesherb.jpg",
         "alt":"Dibujo de dos ojos"
-    },
-    "extUrl":""
+    }],
+    "extUrl":null
 },
 {
     "title":"Poster Delicatessen",
     "year":"2023",
     "category":["ilustración","diseño"],
     "desc":"test",
-    "image":{
-        "url":"",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/FDD_Delicatessenherbertia.png",
         "alt":"Poster claroscuro iluminado por los bordes de una escalera y la planta baja, donde se halla la sombra de una figura humana con cuchillos."
     },
-    "extUrl":""
+    {
+        "url":"https://file.garden/atbLVIZJge080b1z/FDD_Delicatessenherbertiav2.png",
+        "alt":"Poster claroscuro iluminado por los bordes de una escalera y la planta baja, donde se halla la sombra de una figura humana con cuchillos."
+    }],
+    "extUrl":null
 },
 {
     "title":"La Larga Historia de la Humanidad",
     "year":"2025",
     "category":["video"],
     "desc":"test",
-    "image":{
+    "image":[{
         "url":"",
         "alt":""
-    },
+    }],
     "extUrl":""
 },
 {
@@ -47,33 +51,57 @@
     "year":"2022",
     "category":["diseño"],
     "desc":"test",
-    "image":{
+    "image":[{
         "url":"",
         "alt":"Diseño de revista con texto hablando sobre el gingko"
-    },
-    "extUrl":""
+    }],
+    "extUrl":null
 },
 {
     "title":"Ogaraití",
     "year":"2024",
     "category":["diseño","ilustración"],
     "desc":"test",
-    "image":{
+    "image":[{
         "url":"",
         "alt":"Infografia interactiva e ilustrada sobre la leyenda guarani del hornero."
-    },
+    }],
     "extUrl":""
 },
 {
-    "title":"Torito",
-    "year":"2022",
+    "title":"Papillio",
+    "year":"2024",
     "category":["diseño","ilustración"],
     "desc":"test",
-    "image":{
+    "image":[{
         "url":"",
-        "alt":""
+        "alt":"Portada Papillio"
     },
-    "extUrl":""
+{
+        "url":"",
+        "alt":"Portada Papillio"
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/characterlineup.png",
+        "alt":"Lineup de los Personajes"
+    },
+{
+    "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/weapons.png",
+    "alt":"Lineup de los props usados en Papillio"
+},
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/renderescena2.png",
+        "alt":"Escena 1 de Papillio: El Padre Archon con el clerigo en una escena fria y distante."
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/renderescena1.png",
+        "alt":"Escena 2 de Papillio: Rodri recuperandose de matar a uno de los angeles falsos."
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/renderescena3.png",
+        "alt":"Escena 3 de Papillio: La pequeña Julia viendo algo ocurriendo dentro de la iglesia."
+    }],
+    "extUrl":null
 },
 {
     "title":"Waldi - Munich 1972",
@@ -106,7 +134,7 @@
         "url":"",
         "alt":""
     },
-    "extUrl":""
+    "extUrl":null
 },
 {
     "title":"Video Introductorio",
@@ -149,7 +177,8 @@
     "image":{
         "url":"",
         "alt":""
-    }
+    },
+    "extUrl":""
 },
 {
     "title":"Página Bariloche",
@@ -159,7 +188,8 @@
     "image":{
         "url":"",
         "alt":""
-    }
+    },
+    "extUrl":""
 },
 {
     "title":"Cafetera SMEG",
