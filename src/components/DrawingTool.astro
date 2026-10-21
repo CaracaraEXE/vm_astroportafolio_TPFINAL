@@ -4,7 +4,7 @@
     import '../scripts/drawing2ndtry.js'
 </script>
 <section class="lg:w-150">
-<canvas class="drawingCanvas" class="lg:h-100 border-black border-2">
+<canvas class="drawingCanvas" id="drawingCanvas" class="lg:h-100 border-black border-2">
     This is a test
 </canvas>
     <section class="flex justify-between">
@@ -13,8 +13,8 @@
         </div>
         <input type="range" id="brushSize" min="1" max="20" value="5"/>
         <div>
-            <button class="clearButton">Clear</button>
-            <button class="saveButton">Save</button>
+            <button id="clearButton">Clear</button>
+            <button id="saveButton">Save</button>
         </div>
     </section>
 </section>

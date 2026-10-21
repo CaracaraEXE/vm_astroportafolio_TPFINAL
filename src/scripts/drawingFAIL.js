@@ -1,4 +1,3 @@
-   const canvas = document.getElementById("drawingCanvas");
 const ctx = canvas.getContext("2d");
 const colorPicker = document.getElementById("colorPicker");
 const brushSize = document.getElementById("brushSize");
