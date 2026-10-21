@@ -1,13 +1,12 @@
+import { meta } from 'astro:schema';
 import { MongoClient } from 'mongodb';
 
-const uri = import.meta.env.MONGODB_URI;
-
-let db;
 let client;
+let db;
 
-export async function getDb(dbName = 'Cluster0') {
+export async function getDb(dbName = 'mysite') {
   if (!client) {
-    client = new MongoClient(uri);
+    client = new MongoClient(import.meta.env.MONGODB_URI);
     await client.connect();
   }
   db = client.db(dbName);
