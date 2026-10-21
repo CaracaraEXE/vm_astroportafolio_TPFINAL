@@ -1,10 +1,11 @@
 import { MongoClient } from 'mongodb';
 
-const uri = "mongodb+srv://herbertialahue_db_user:<db_password>@cluster0.r7tmmt6.mongodb.net/";
+const uri = import.meta.env.MONGODB_URI;
 
 let db;
+let client;
 
-export async function getDb(dbName = 'mysite') {
+export async function getDb(dbName = 'Cluster0') {
   if (!client) {
     client = new MongoClient(uri);
     await client.connect();
