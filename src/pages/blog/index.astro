@@ -1,0 +1,25 @@
+---
+// src/pages/blog/index.astro
+import { getDb } from '../../lib/mongodb.js';
+
+const db = await getDb('mysite');
+const posts = await db.collection('posts')
+  .find({ published: true })
+  .sort({ publishedAt: -1 })
+  .limit(20)
+  .toArray();
+---
+
+<html>
+  <head><title>Blog</title></head>
+  <body>
+    <h1>Blog Posts</h1>
+    {posts.map((post:any) => (
+      <article>
+        <h2><a href={`/blog/${post.slug}`}>{post.title}</a></h2>
+        <p>{post.excerpt}</p>
+        <time>{new Date(post.publishedAt).toLocaleDateString()}</time>
+      </article>
+    ))}
+  </body>
+</html>
