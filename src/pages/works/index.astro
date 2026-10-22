@@ -4,8 +4,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Gallery from '../../components/Gallery.astro'
 
 const workList = await getCollection('projects');
-console.log(workList);
+
+workList.sort((a:any,b:any) => b.data.year - a.data.year)
+
 ---
 <BaseLayout>
+    <h1>PROYECTOS</h1>
 <Gallery works={workList}/>
 </BaseLayout>

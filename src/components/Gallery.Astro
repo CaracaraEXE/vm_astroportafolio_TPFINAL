@@ -1,12 +1,11 @@
 ---
-import type { any } from "astro/zod";
-import type { map } from "astro:schema";
+import GalleryItem  from "./GalleryItem.astro";
 
 const {works} = Astro.props;
 
-const coverImages = works.map((work:any) => (work.data.image[0]));
-
 ---
-<div>
-    
+<div class="masonry-container columns-3 space-y-3 w-fit">
+        {works.map((work:any) =>
+            <GalleryItem work={work.data}/>
+        )}
 </div>

@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Gallery from "../../../components/Gallery.astro";
+
+export async function getStaticPaths(){
+    const works = await getCollection('projects');
+    const uniqueCategories = [...new Set(works.map((work) => work.data.category).flat())];
+
+    return uniqueCategories.map((category:any) => {
+        const filteredWorks = works.filter((work) =>
+        work.data.category.includes(category)
+    );
+    return {
+        params: { category },
+        props: {works: filteredWorks}
+    }
+    })
+}
+
+const {category} = Astro.params;
+const {works} = Astro.props;
+
+---
+<BaseLayout>
+    <h1>MIS PROYECTOS</h1>
+    <h2>Categoria: <span class="uppercase">#{category}</span></h2>
+<Gallery works={works}/>
+</BaseLayout>
+
