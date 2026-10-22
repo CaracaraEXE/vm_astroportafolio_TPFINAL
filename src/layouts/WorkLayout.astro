@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import Icon from '../assets/svg/asterisk.svg';
+import { Carousel } from 'webcoreui/astro';
 
 const {work} = Astro.props;
 
@@ -9,9 +10,15 @@ const {work} = Astro.props;
 <BaseLayout>
 <h1 class="uppercase flex items-center gap-2 border-b-2 border-fuchsia-900 border-dotted"><Icon width={30} height={30} fill={"currentColor"} class="icon opacity-100"/> {work.title}</h1>
 {
-work.image.map((img:any) => (
+/* work.image.map((img:any) => (
     <Image src={img.url} alt={img.alt} width={200} height={200}/>
-))
+))*/
+
+<Carousel items={work.image.length} className="max-h-80">
+    { work.image.map((img:any) => (
+    <li><Image src={img.url} alt={img.alt} width={200} height={200} class="w-full object-contain"/></li>
+))}
+</Carousel>
 }
 <p>Categorías: </p>
 <p>{work.desc}</p>
