@@ -1,8 +1,29 @@
 ---
-import List from '../data/portfolioworks.json'
+import { Image } from "astro:assets";
+import path from 'path';
+
+interface Project {
+    title: string;
+    pageName: string;
+    year: string;
+    category:string[];
+    image: string[];
+}
+
+
+interface Props {
+  works: Project[];
+}
+
+const {works} = Astro.props;
+
 ---
-<ul>
-    {List.map(item =>
-        <li>{item.title}</li>
-    )}
-</ul>
+<div>
+    {
+        works.map(work, i) => (
+            <div>
+                <a href="/"></a>
+            </div>
+        )
+    }
+</div>
