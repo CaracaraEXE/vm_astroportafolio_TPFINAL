@@ -1,29 +1,10 @@
 ---
-import { Image } from "astro:assets";
-import path from 'path';
-
-interface Project {
-    title: string;
-    pageName: string;
-    year: string;
-    category:string[];
-    image: string[];
-}
-
-
-interface Props {
-  works: Project[];
-}
 
 const {works} = Astro.props;
 
 ---
 <div>
-    {
-        works.map(work, i) => (
-            <div>
-                <a href="/"></a>
-            </div>
-        )
-    }
+    {works.map((work:any) => (
+        <p>{work.data.title}</p>    )
+    )}
 </div>

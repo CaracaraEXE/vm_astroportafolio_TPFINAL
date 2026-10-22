@@ -15,15 +15,7 @@ function slugify(text: string): string {
 }
 
 const projects = defineCollection({
-    loader: file("src/data/portfolioworks.json",{
-        parser: (text) => {
-            const data = JSON.parse(text);
-            return data.map((item: any) => ({
-                ...item,
-                id: slugify(item.title),
-            }))
-        }
-    }),
+    loader: file("src/data/portfolioworks.json"),
     schema: z.object({
         title: z.string(),
         pageName: z.string(),
@@ -34,7 +26,7 @@ const projects = defineCollection({
             url: z.string(),
             alt: z.string()
         })).min(1),
-        extUrl:z.string() || z.object()
+        extUrl:z.string()
     })
 })
 
