@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "./BaseLayout.astro";
+import Icon from '../assets/svg/asterisk.svg';
+
+const {work} = Astro.props;
+
+---
+<BaseLayout>
+<h1 class="uppercase flex items-center gap-2 border-b-2 border-fuchsia-900 border-dotted"><Icon width={30} height={30} fill={"currentColor"} class="icon opacity-100"/> {work.title}</h1>
+{
+work.image.map((img:any) => (
+    <Image src={img.url} alt={img.alt} width={200} height={200}/>
+))
+}
+<p>Categorías: </p>
+<p>{work.desc}</p>
+<a class="text-fuchsia-900 underline" href="/works">Volver a proyectos</a>
+</BaseLayout>
