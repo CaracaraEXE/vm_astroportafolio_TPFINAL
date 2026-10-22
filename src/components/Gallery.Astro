@@ -1,0 +1,8 @@
+---
+import List from '../data/portfolioworks.json'
+---
+<ul>
+    {List.map(item =>
+        <li>{item.title}</li>
+    )}
+</ul>

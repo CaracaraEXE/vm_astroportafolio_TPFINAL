@@ -3,10 +3,10 @@
     "year":"2023",
     "category":["animación","video"],
     "desc":"test",
-    "image":{
+    "image":[{
         "url":"",
         "alt":""
-    },
+    }],
     "extUrl":""
 },
 {
@@ -18,13 +18,13 @@
         "url":"https://file.garden/atbLVIZJge080b1z/eyesherb.jpg",
         "alt":"Dibujo de dos ojos"
     }],
-    "extUrl":null
+    "extUrl":""
 },
 {
     "title":"Poster Delicatessen",
     "year":"2023",
     "category":["ilustración","diseño"],
-    "desc":"test",
+    "desc":"Ilustración de poster para la pelicula Delicatessen.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/FDD_Delicatessenherbertia.png",
         "alt":"Poster claroscuro iluminado por los bordes de una escalera y la planta baja, donde se halla la sombra de una figura humana con cuchillos."
@@ -33,7 +33,7 @@
         "url":"https://file.garden/atbLVIZJge080b1z/FDD_Delicatessenherbertiav2.png",
         "alt":"Poster claroscuro iluminado por los bordes de una escalera y la planta baja, donde se halla la sombra de una figura humana con cuchillos."
     }],
-    "extUrl":null
+    "extUrl":""
 },
 {
     "title":"La Larga Historia de la Humanidad",
@@ -55,7 +55,7 @@
         "url":"",
         "alt":"Diseño de revista con texto hablando sobre el gingko"
     }],
-    "extUrl":null
+    "extUrl":""
 },
 {
     "title":"Ogaraití",
@@ -63,10 +63,10 @@
     "category":["diseño","ilustración"],
     "desc":"Esta iconografía interactiva fue diseñada para supuestamente mostrarse en una pantalla gigante, por lo que todos los elementos fueron consolidados en un gran lienzo. Fui otorgada la leyenda del Hogaraiteg/Ogaraití para trabajar, conocida casualmente como el origen del ave nacional de la Argentina; el Hornero. Fue muy interesante investigar sobre la cultura (Mbya) Guaraní y su estado actual en la Argentina. Todos los graficos presentes fueron dibujos vectorizados en Adobe Illustrator y colocados como SVG en Figma; en donde fueron dados distintos overlays en base a la info correspondiente. Además, toda la paleta de colores fue escogida a partir de fotos de la selva misionera.",
     "image":[{
-        "url":"",
+        "url":"https://file.garden/atbLVIZJge080b1z/ogaraiti/SinAves.png",
         "alt":"Infografia interactiva e ilustrada sobre la leyenda guarani del hornero."
     }],
-    "extUrl":""
+    "extUrl":"https://www.instagram.com/p/DM5o7y7s9L3/"
 },
 {
     "title":"Papillio",
@@ -74,10 +74,6 @@
     "category":["diseño","ilustración"],
     "desc":"test",
     "image":[{
-        "url":"",
-        "alt":"Portada Papillio"
-    },
-{
         "url":"",
         "alt":"Portada Papillio"
     },
@@ -101,28 +97,28 @@
         "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/renderescena3.png",
         "alt":"Escena 3 de Papillio: La pequeña Julia viendo algo ocurriendo dentro de la iglesia."
     }],
-    "extUrl":null
+    "extUrl":""
 },
 {
     "title":"Waldi - Munich 1972",
     "year":"2024",
     "category":["animación","video"],
     "desc":"En una de las asignaturas, se nos dió de animar un personaje en base a formas. Los Juegos Olimpicos y su diseño grafico son unos de mis intereses principales, así que fui por animar a Waldi, mascota de los juegos olímpicos de Munich 1972. La animación se dió en base a recrear el perrito en Ilustrator, y a cada capa otorgarle movimiento propio. El sonido usado proviene de Freesound.",
-    "image":{
+    "image":[{
         "url":"",
         "alt":""
-    },
-    "extUrl":""
+    }],
+    "extUrl":"https://youtube.com/shorts/HHJnlQVvSdw"
 },
 {
     "title":"7mo Piso - Animaciones",
     "year":"2025",
     "category":["animación","ilustración","diseño"],
     "desc":"test",
-    "image":{
-        "url":"",
-        "alt":""
-    },
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/7mopiso.png",
+        "alt":"Poster 7mo Piso"
+    }],
     "extUrl":""
 },
 {
@@ -130,54 +126,73 @@
     "year":"2025",
     "category":["diseño"],
     "desc":"test",
-    "image":{
-        "url":"",
-        "alt":""
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/teatime/splasharttt.png",
+        "alt":"Splash Art de Tea Time"
     },
-    "extUrl":null
+    {
+        "url":"https://file.garden/atbLVIZJge080b1z/teatime/tticon.png",
+        "alt":"Icono de Tea Time"
+    },{
+        "url":"https://file.garden/atbLVIZJge080b1z/teatime/teatimeinicio.png",
+        "alt":"Diseño de pantalla de inicio TEA Time"
+    },{
+        "url":"https://file.garden/atbLVIZJge080b1z/teatime/Men%C3%BA.png",
+        "alt":"Menu virtual TEA Time"
+    }
+    ],
+    "extUrl":""
 },
 {
     "title":"Video Introductorio",
     "year":"2024",
     "category":["video","animación","diseño"],
     "desc":"test",
-    "image":{
+    "image":[{
         "url":"",
         "alt":""
-    },
+    }],
     "extUrl":"https://www.instagram.com/p/DM5kgsZRF6w"
 },
 {
     "title":"Maimo GAME ROOM",
     "year":"2024",
-    "category":["video","animación"],
+    "category":["programacion"],
     "desc":"test",
-    "image":{
-        "url":"",
-        "alt":""
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/tateti.png",
+        "alt":"Ta te ti"
     },
-    "extUrl":""
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/generala.png",
+        "alt":"Generala"
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/simonsays.png",
+        "alt":"Simon Dice"
+    }],
+    "extUrl":"https://herbertialahue.neocities.org/simonsays/"
 },
 {
-    "title":"El Sueño - Composición Original",
+    "title":"Sky Battle Game",
     "year":"2024",
-    "category":["audio"],
+    "category":["programacion"],
     "desc":"test",
-    "image":{
-        "url":"",
-        "alt":""
-    },
-    "extUrl":""
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/skybattle.png",
+        "alt":"Sky battle"
+    }],
+    "extUrl":"https://herbertialahue.neocities.org/skybattle"
 },
 {
     "title":"Radiomontaje",
     "year":"2023",
     "category":["audio"],
     "desc":"test",
-    "image":{
+    "image":[{
         "url":"",
         "alt":""
-    },
+    }],
     "extUrl":""
 },
 {
@@ -185,20 +200,31 @@
     "year":"2023",
     "category":["programacion"],
     "desc":"test",
-    "image":{
-        "url":"",
-        "alt":""
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/bariloche.png",
+        "alt":"Hub de Bariloche"
+    },{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/pajaro.png",
+        "alt":"Pajarito"
     },
-    "extUrl":""
+    {
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/galeria.png",
+        "alt":"Galeria click & drag"
+    }
+],
+    "extUrl":"https://herbertialahue.neocities.org/bariloche/home"
 },
 {
     "title":"Cafetera SMEG",
     "year":"2024",
     "category":["3D"],
     "desc":"Modelado de una cafetera de la marca SMEG para una consigna.",
-    "image":{
-        "url":"",
-        "alt":""
-    },
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/3d/renderfinal.png",
+        "alt":"Modelo 3D renderizado"
+    },{
+        "url":"https://file.garden/atbLVIZJge080b1z/3d/rendercycles.png",
+        "alt":"Modelo 3D con render Cycles"
+    }],
     "extUrl":""
 }]

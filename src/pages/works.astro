@@ -1,6 +1,11 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-
+const workList = await getCollection('projects');
+console.log(workList);
 ---
-<BaseLayout></BaseLayout>
+<BaseLayout>
+<h1>Mis Proyectos</h1>
+
+</BaseLayout>
