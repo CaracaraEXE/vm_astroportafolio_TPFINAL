@@ -1,11 +1,11 @@
 ---
 import { getCollection, render } from "astro:content";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths(){
     const works = await getCollection('projects');
     return works.map(work => ({
-        params:{slug: work.data.pageName}, props:{work}
+        params:{slug: work.data.slug}, props:{work}
     }));
 }
 

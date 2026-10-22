@@ -18,7 +18,7 @@ const projects = defineCollection({
     loader: file("src/data/portfolioworks.json"),
     schema: z.object({
         title: z.string(),
-        pageName: z.string(),
+        slug: z.string(),
         year: z.string(),
         category:z.array(z.string()).min(1),
         desc: z.string(),
