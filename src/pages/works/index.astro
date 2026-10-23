@@ -2,13 +2,17 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Gallery from '../../components/Gallery.astro'
+import Categories from "../../components/Categories.astro";
 
 const workList = await getCollection('projects');
 
 workList.sort((a:any,b:any) => b.data.year - a.data.year)
 
+const workCat = [...new Set(workList.map((work) => work.data.category).flat())]
+
 ---
 <BaseLayout>
     <h1>PROYECTOS</h1>
+    <Categories categories={workCat}/>
 <Gallery works={workList}/>
 </BaseLayout>

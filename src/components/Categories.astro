@@ -1,0 +1,8 @@
+---
+const { categories } = Astro.props;
+---
+<section class="mb-2.5">
+    <p class="mb-2">{categories.map((cat:any) =>(
+        <a href={`/works/tags/${cat}`} class="leading-5 inline-block uppercase text-fuchsia-900 p-1.5 hover:bg-fuchsia-950 hover:text-white transition-all mx-1"># {cat}</a>
+    ))}</p>
+</section>

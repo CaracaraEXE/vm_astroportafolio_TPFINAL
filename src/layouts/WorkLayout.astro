@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import Icon from '../assets/svg/asterisk.svg';
 import { Carousel } from 'webcoreui/astro';
+import Categories from "../components/Categories.astro";
 
 const {work} = Astro.props;
 
@@ -20,7 +21,7 @@ const {work} = Astro.props;
 ))}
 </Carousel>
 }
-<p>Categorías: </p>
+<Categories categories={work.category}/>
 <p>{work.desc}</p>
 <a class="text-fuchsia-900 underline" href="/works">Volver a proyectos</a>
 </BaseLayout>

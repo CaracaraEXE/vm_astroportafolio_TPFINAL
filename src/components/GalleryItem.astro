@@ -1,18 +1,17 @@
 ---
 import { Image } from "astro:assets";
-import '../styles/pages.css'
 
 const { work } = Astro.props;
 const workImage = work.image[0];
 
 ---
-<article class="w-fit masonry-item break-inside-avoid mb-6 fadeInUp-animation">
+<article class="masonry-item break-inside-avoid mb-6 fadeInUp-animation w-full">
     <a href={`/works/${work.slug}`} class="group block overflow-hidden relative transition-shadow duration-300 hover:-translate-y-0.5 hover:shadow-lg">
    <div class="overflow-hidden relative">
-    <Image src={workImage.url} alt={workImage.alt} height={150} width={150} class="w-full min-h-70  object-cover grayscale hover:grayscale-0 transition-all"/>
+    <Image src={workImage.url} alt={workImage.alt} height={150} width={150} class="w-full lg:min-h-80 max-h-50 lg:max-h-90 object-cover lg:grayscale lg:hover:grayscale-0 transition-all"/>
         <div class="gallery-caption pointer-events-none absolute inset-x-0 bottom-0 px-3 pb-3 pt-2 bg-fuchsia-950">
-            <h3 class="text-sm font-medium text-stone-50">{work.title} ({work.year})</h3>
-            <section>
+            <h3 class="text-[0.90em] font-bold text-white leading-4">{work.title} <span class="text-[0.80em] font-medium text-white leading-4">({work.year})</span></h3>
+            <section class="text-white font-light text-[0.75em] flex flex-wrap gap-1 leading-2 mt-1">
                 {work.category.map((cat:any) => (
                     <span>#{cat}</span>
                 ))}
