@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Gallery from "../../../components/Gallery.astro";
+import { Breadcrumb } from "webcoreui/astro";
 
 export async function getStaticPaths(){
     const works = await getCollection('projects');
@@ -21,10 +22,15 @@ export async function getStaticPaths(){
 const {category} = Astro.params;
 const {works} = Astro.props;
 
+const breadcrumbs = [
+    {label: 'Proyectos', href: '/works'},
+    {label: `${category}`, href: `/works/${category}`}
+]
+
 ---
 <BaseLayout>
-    <a href="/works">Volver</a>
-    <h1>PROYECTOS: <span class="font-bold uppercase">#{category}</span></h1>
+    <Breadcrumb items={breadcrumbs}/>
+    <h1>PROYECTOS</h1>
 <Gallery works={works}/>
 </BaseLayout>
 

@@ -1,16 +1,24 @@
 ---
 import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
-import Icon from '../assets/svg/asterisk.svg';
-import { Carousel } from 'webcoreui/astro';
+import { Carousel, Breadcrumb } from 'webcoreui/astro';
 import Categories from "../components/Categories.astro";
-import Arrow from '../assets/svg/charm--arrow-down.svg'
-import { lazy } from "astro:schema";
 
 const {work} = Astro.props;
 
+const breadcrumbs = [
+    {label: 'Proyectos', href: '/works'},
+    {label: `${work.title}`, href: `/works/${work.slug}`}
+]
+
 ---
+<style>
+    tr, td{
+        height: fit-content;
+    }
+</style>
 <BaseLayout>
+<Breadcrumb items={breadcrumbs}/>
 <h1 class="uppercase flex items-center gap-2 border-b-2 border-fuchsia-900 border-dotted mb-5"> {work.title}</h1>
 {
 /* work.image.map((img:any) => (
@@ -23,8 +31,16 @@ const {work} = Astro.props;
 ))}
 </Carousel>
 }
-<Categories categories={work.category}/>
+<table>
+    <tr>
+        <td class="font-bold">Año</td>
+        <td class="pl-4 py-2">{work.year}</td>
+    </tr>
+    <tr>
+        <td class="font-bold flex lg:table-cell">Categorías</td>
+        <td class="pl-2.5"><Categories categories={work.category}/></td>
+    </tr>
+</table>
 <p>{work.desc}</p>
 
-<a class="underline flex items-center" href="/works"><Arrow width={20} height={20} fill={"currentColor"} class="rotate-90"/> Volver a proyectos</a>
 </BaseLayout>
