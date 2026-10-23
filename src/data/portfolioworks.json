@@ -11,10 +11,10 @@
     "extUrl":"https://herbertialahue.neocities.org/Soldadito"
 },
 {
-    "title":"Black Mirror - White Christmas (Ilustración)",
+    "title":"Black Mirror - White Christmas (ilustracion)",
     "slug":"blackmirror",
     "year":"2023",
-    "category":["ilustración"],
+    "category":["ilustracion"],
     "desc":"Para esta consigna, se nos dió ver el capitulo 'White Christmas', y crear un dibujo en base a la misma. No me puedo acordar de la trama al 100%, pero sé que iba sobre dos diferentes protagonistas y como la tecnología presente terminaron poniendo a ambos en situaciones opuestas pero igualmente desesperantes. Justamente eso refleja mi dibujo, un mismo final trágico pero dado por dos puntos de vista distintos.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/eyesherb.jpg",
@@ -26,8 +26,8 @@
     "title":"Poster Delicatessen",
     "slug":"delicatessen",
     "year":"2023",
-    "category":["ilustración","diseño"],
-    "desc":"Ilustración de poster para la pelicula Delicatessen.",
+    "category":["ilustracion","diseño"],
+    "desc":"ilustracion de poster para la pelicula Delicatessen.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/FDD_Delicatessenherbertia.png",
         "alt":"Poster claroscuro iluminado por los bordes de una escalera y la planta baja, donde se halla la sombra de una figura humana con cuchillos."
@@ -66,7 +66,7 @@
     "title":"Ogaraití",
     "slug":"ogaraiti",
     "year":"2024",
-    "category":["diseño","ilustración"],
+    "category":["diseño","ilustracion"],
     "desc":"Esta iconografía interactiva fue diseñada para supuestamente mostrarse en una pantalla gigante, por lo que todos los elementos fueron consolidados en un gran lienzo. Fui otorgada la leyenda del Hogaraiteg/Ogaraití para trabajar, conocida casualmente como el origen del ave nacional de la Argentina; el Hornero. Fue muy interesante investigar sobre la cultura (Mbya) Guaraní y su estado actual en la Argentina. Todos los graficos presentes fueron dibujos vectorizados en Adobe Illustrator y colocados como SVG en Figma; en donde fueron dados distintos overlays en base a la info correspondiente. Además, toda la paleta de colores fue escogida a partir de fotos de la selva misionera.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/ogaraiti/SinAves.png",
@@ -78,7 +78,7 @@
     "title":"Papillio",
     "slug":"papillio",
     "year":"2024",
-    "category":["diseño","ilustración"],
+    "category":["ilustracion"],
     "desc":"Dibujos y diseños de personajes para un megaproyecto entregable.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/portada.png",
@@ -122,7 +122,7 @@
     "title":"7mo Piso - Animaciones",
     "slug":"7mopiso",
     "year":"2025",
-    "category":["animación","ilustración","diseño","video"],
+    "category":["animación","ilustracion","diseño","video"],
     "desc":"test",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/7mopiso.png",

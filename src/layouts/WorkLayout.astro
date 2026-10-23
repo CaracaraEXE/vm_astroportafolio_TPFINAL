@@ -4,12 +4,14 @@ import BaseLayout from "./BaseLayout.astro";
 import Icon from '../assets/svg/asterisk.svg';
 import { Carousel } from 'webcoreui/astro';
 import Categories from "../components/Categories.astro";
+import Arrow from '../assets/svg/charm--arrow-down.svg'
+import { lazy } from "astro:schema";
 
 const {work} = Astro.props;
 
 ---
 <BaseLayout>
-<h1 class="uppercase flex items-center gap-2 border-b-2 border-fuchsia-900 border-dotted"><Icon width={30} height={30} fill={"currentColor"} class="icon opacity-100"/> {work.title}</h1>
+<h1 class="uppercase flex items-center gap-2 border-b-2 border-fuchsia-900 border-dotted mb-5"> {work.title}</h1>
 {
 /* work.image.map((img:any) => (
     <Image src={img.url} alt={img.alt} width={200} height={200}/>
@@ -17,11 +19,12 @@ const {work} = Astro.props;
 
 <Carousel items={work.image.length} className="max-h-80">
     { work.image.map((img:any) => (
-    <li><Image src={img.url} alt={img.alt} width={200} height={200} class="w-full object-contain"/></li>
+    <li><Image src={img.url} alt={img.alt} width={200} height={200} class="w-full object-contain" loading="lazy" decoding="async"/></li>
 ))}
 </Carousel>
 }
 <Categories categories={work.category}/>
 <p>{work.desc}</p>
-<a class="text-fuchsia-900 underline" href="/works">Volver a proyectos</a>
+
+<a class="underline flex items-center" href="/works"><Arrow width={20} height={20} fill={"currentColor"} class="rotate-90"/> Volver a proyectos</a>
 </BaseLayout>
