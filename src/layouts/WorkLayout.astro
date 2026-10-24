@@ -43,4 +43,10 @@ const breadcrumbs = [
 </table>
 <p>{work.desc}</p>
 
+{work.extUrl.length > 2?
+<a href={work.extUrl} class="leading-5 inline-block uppercase p-1.5 bg-fuchsia-950 text-white m-1 rounded-sm">LINK EXTERNO</a>
+:
+""
+}
+
 </BaseLayout>
