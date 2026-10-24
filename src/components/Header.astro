@@ -6,12 +6,19 @@ import Arrow from '../assets/svg/charm--arrow-down.svg';
 import "../styles/global.css";
 import "../styles/hover.css"
 ---
-<header class="lg:flex lg:flex-col lg:max-h-lvh lg:flex-end lg:pl-6 p-10 lg:p-5 pt-5 lg:pr-6 lg:max-w-[30em]">
+<style>
+    @media screen and (min-width: 636px) {
+  ul{
+      grid-template-rows: 1fr;
+  }
+}
+</style>
+<header class="lg:flex lg:flex-col lg:max-h-lvh lg:flex-end pl-8 lg:p-5 pt-8 lg:pr-6 lg:max-w-[30em]">
         <button class="dropdown-opener cursor-pointer hvr-icon-rotate"><Asterisk width={30} height={30} fill={"currentColor"} class="hover:text-violet-800 hvr-icon"/></button>
-    <div class="sub-menu">
-        <div class="w-fit flex flex-col gap-5 lg:overflow-visible">
-    <SideMenu/>
-    <SocMedNav/>
+    <ul class="sub-menu">
+    <div>
+        <SideMenu/>
+        <SocMedNav/>
     </div>
-    </div>
+    </ul>
 </header>

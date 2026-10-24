@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Gallery from "../../../components/Gallery.astro";
+import { Breadcrumb } from "webcoreui/astro";
+
+export async function getStaticPaths(){
+    const works = await getCollection('projects');
+    const uniqueCategories = [...new Set(works.map((work) => work.data.category).flat())];
+
+    return uniqueCategories.map((category:any) => {
+        const filteredWorks = works.filter((work) =>
+        work.data.category.includes(category)
+    );
+    return {
+        params: { category },
+        props: {works: filteredWorks}
+    }
+    })
+}
+
+const {category} = Astro.params;
+const {works} = Astro.props;
+
+const breadcrumbs = [
+    {label: 'Proyectos', href: '/works'},
+    {label: `${category}`, href: `/works/${category}`}
+]
+
+---
+<BaseLayout>
+    <Breadcrumb items={breadcrumbs}/>
+    <h1>PROYECTOS</h1>
+<Gallery works={works}/>
+</BaseLayout>
+

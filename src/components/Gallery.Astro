@@ -1,0 +1,11 @@
+---
+import GalleryItem  from "./GalleryItem.astro";
+
+const {works} = Astro.props;
+
+---
+<div class="masonry-container lg:columns-3 space-y-3 w-fit">
+        {works.map((work:any) =>
+            <GalleryItem work={work.data}/>
+        )}
+</div>
