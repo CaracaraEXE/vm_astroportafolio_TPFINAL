@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import { Carousel, Breadcrumb } from 'webcoreui/astro';
 import Categories from "../components/Categories.astro";
+import {YouTube} from 'astro-embed';
 
 const {work} = Astro.props;
 
@@ -19,7 +20,7 @@ const breadcrumbs = [
 </style>
 <BaseLayout>
 <Breadcrumb items={breadcrumbs}/>
-<h1 class="uppercase flex items-center gap-2 border-b-2 border-fuchsia-900 border-dotted mb-5"> {work.title}</h1>
+<h1 class="uppercase flex items-center gap-2 border-b-2 border-fuchsia-900 border-dotted mb-5 mt-2.5"> {work.title}</h1>
 {
 /* work.image.map((img:any) => (
     <Image src={img.url} alt={img.alt} width={200} height={200}/>
@@ -43,10 +44,24 @@ const breadcrumbs = [
 </table>
 <p>{work.desc}</p>
 
-{work.extUrl.length > 2?
-<a href={work.extUrl} class="leading-5 inline-block uppercase p-1.5 bg-fuchsia-950 text-white m-1 rounded-sm">LINK EXTERNO</a>
+{work.category.find((cat:any) => (cat === "audio"))?
+<h2 class="mb-3">PREVIEW (Audio)</h2>
+<audio src={work.extUrl} controls/>
 :
 ""
 }
 
+{work.category.find((cat:any) => (cat === "video"))?
+<h2 class="mb-3">PREVIEW (Video)</h2>
+<YouTube id={work.extUrl}/>
+:
+""
+}
+
+{work.category.find((cat:any) => (cat === "programacion" || "texto"))?
+<h2 class="mb-3">PREVIEW</h2>
+<a href={work.extUrl} class="inline-block uppercase p-1.5 bg-fuchsia-950 text-white px-2 m-1 rounded-sm">Link Externo</a>
+:
+""
+}
 </BaseLayout>
