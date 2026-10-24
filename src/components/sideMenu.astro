@@ -1,7 +1,11 @@
 ---
+import { getCollection } from 'astro:content';
 import Icon from '../assets/svg/asterisk.svg';
 import Arrow from '../assets/svg/charm--arrow-down-right.svg';
 import '../styles/global.css';
+
+const works = await getCollection('projects');
+const workCat = [...new Set(works.map((work) => work.data.category).flat())]
 
 ---
 <style>
@@ -70,12 +74,13 @@ button:hover .icon, a:hover .icon {
           </ul>
         </li>
         <li>
-          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em] hvr-icon-down"><Arrow width={20} height={20} class="icon hvr-icon opacity-100 scale-125 cursor-pointer"/><a href="/about">Proyectos</a></button>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em] hvr-icon-down"><Arrow width={20} height={20} class="icon hvr-icon opacity-100 scale-125 cursor-pointer"/>Proyectos</button>
           <ul class="ml-5 sub-menu">
           <div>
-            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
-            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Experiencia</a></li>
-            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Habilidades</a></li>
+                                                  <li class="text-1xl lg:text-[0.75em]"><a href={`/works`}><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Todos</span></a></li>
+            {workCat.map((category) =>(
+                          <li class="text-1xl lg:text-[0.75em]"><a href={`/works/tags/${category}`}><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">{category}</span></a></li>
+            ))}
           </div>
           </ul>
         </li>

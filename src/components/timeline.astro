@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css'
-import { Image } from 'astro:assets';
 import Timelinedate from './timelinedate.astro';
 
 const experiences = [{
@@ -17,7 +16,6 @@ const experiences = [{
 
 
 ---
-<style></style>
 <ul id="timeline">
     {
         experiences.map((exp: any) => (

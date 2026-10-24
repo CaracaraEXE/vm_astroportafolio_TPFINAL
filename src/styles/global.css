@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
+p{
+        margin-bottom: 1em;
+    }
+
+@media screen and (min-width: 636px) {
+  p{
+    font-size: 0.85em;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+
 .sub-menu{
   display: grid;
   grid-template-rows: 0fr;
@@ -29,6 +55,7 @@ svg{
 h1{
     font-size: 2em;
     color:darkmagenta;
+    margin-bottom: 1em;
 }
 
 h2{

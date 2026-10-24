@@ -12,11 +12,18 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^11.1.9",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.5",
+    "astro-embed": "^0.14.0",
     "tailwindcss": "^4.3.3"
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "sass": "^1.106.1",
+    "typescript": "^5.9.3",
+    "webcoreui": "^1.5.0"
   }
 }
