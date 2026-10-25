@@ -1,7 +1,12 @@
 ---
+import { getCollection } from 'astro:content';
 import Icon from '../assets/svg/asterisk.svg';
+import Arrow from '../assets/svg/charm--arrow-down-right.svg';
 import '../styles/global.css';
-import  SocMedNav  from './socMedNav.astro';
+
+const works = await getCollection('projects');
+const workCat = [...new Set(works.map((work) => work.data.category).flat())]
+
 ---
 <style>
 
@@ -9,26 +14,30 @@ import  SocMedNav  from './socMedNav.astro';
         font-family: var(--font-michroma);
     }
 
-    a{
+    a, button{
         display: flex;
         width:fit-content;
         align-items: center;
-        gap:5px;
+        gap:2px;
         height: 2em;
         transition:font-weight 0.25s ease;
-    }
-
-    a:hover{
-        color:blueviolet;
         font-weight: bold;
     }
 
-    .icon {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
+    button{
+      gap:0;
+    }
 
-li:hover .icon {
+    li a:hover, button:hover{
+      color:darkmagenta;
+      font-weight: bold;
+    }
+
+    .icon {
+      transition: opacity 0.3s ease;
+    }
+
+button:hover .icon, a:hover .icon {
   opacity: 1;
 }
 
@@ -48,16 +57,34 @@ li:hover .icon {
 }
 
 </style>
-<nav class="nav-links">
+<script>
+  import "../scripts/dropdown.js"
+</script>
+<nav class="pt-5 lg:pl-2.5">
     <ul>
-        <li><a href="/about" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Sobre mí</a></li>
-        <ul class="ml-20">
-            <li><a href="/about#bio"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Biografía</a></li>
-            <li><a href="/about#past"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Experiencia</a></li>
-            <li><a href="/about#skills"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Habilidades</a></li>
-        </ul>
-        <li><a href="/works" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Proyectos</a></li>
-        <li><a href="/links" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Links</a></li>
-        <li><a href="/souvenir" class="font-bold"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/>Souvenir</a></li>
+        <li class="text-2xl lg:text-[1em]"><a href="/" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Inicio</a></li>
+        <li>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em] hvr-icon-down"><Arrow width={20} height={25} fill={"currentColor"} class="icon opacity-100 cursor-pointer scale-125 hvr-icon"/>Sobre mí</button>
+          <ul class="ml-5 sub-menu">
+          <div>
+            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Experiencia</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Habilidades</span></a></li>
+          </div>
+          </ul>
+        </li>
+        <li>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em] hvr-icon-down"><Arrow width={20} height={20} class="icon hvr-icon opacity-100 scale-125 cursor-pointer"/>Proyectos</button>
+          <ul class="ml-5 sub-menu">
+          <div>
+                                                  <li class="text-1xl lg:text-[0.75em]"><a href={`/works`}><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Todos</span></a></li>
+            {workCat.map((category) =>(
+                          <li class="text-1xl lg:text-[0.75em]"><a href={`/works/tags/${category}`}><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">{category}</span></a></li>
+            ))}
+          </div>
+          </ul>
+        </li>
+        <li class="text-2xl lg:text-[1em]"><a href="/links" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Links</a></li>
+        <li class="text-2xl lg:text-[1em]"><a href="/souvenir" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/>Souvenir</a></li>
     </ul>
 </nav>

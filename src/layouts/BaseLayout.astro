@@ -1,17 +1,63 @@
 ---
-import Header  from '../components/Header.astro';
+import Header from "../components/Header.astro";
 import '../styles/global.css'
+import { Font } from "astro:assets";
 ---
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+     font-family: var(--font-michroma);
+  }
+
+   @keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+main{
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+@media screen and (min-width: 636px) {
+  main{
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    padding-left: 1.5em;
+  }
+
+    body{
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+</style>
 <html>
     <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Test</title>
+        <Font cssVariable="--font-michroma"/>
+    <title>Portafolio Herbertia</title>
   </head>
-  <body style="display: flex;">
+  <body>
     <Header/>
-    <slot style="flex-direction: column;"/>
+    <main class="lg:overflow-scroll fadeInUp-animation">
+    <slot class="flex flex-col" />
+    </main>
   </body>
 </html>

@@ -1,0 +1,246 @@
+[{
+    "title":"El Soldadito de Plomo",
+    "slug":"soldado",
+    "year":"2024",
+    "category":["texto"],
+    "desc":"Una historia interactiva que sirve como re-escritura del cuento 'El soldadito de plomo' de Hans Christian Andersen. Ahora vuelto un cuento de misterio con la participación de todo el grupo de soldados.",
+    "image":[{
+        "url":"https://upload.wikimedia.org/wikipedia/commons/3/31/Bertall_ill_Intrepide_Soldat_de_plomb_Le_Couple.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "alt":"Portada del soldadito de plomo"
+    }],
+    "extUrl":"https://herbertialahue.neocities.org/Soldadito"
+},
+{
+    "title":"Black Mirror - White Christmas (ilustracion)",
+    "slug":"blackmirror",
+    "year":"2023",
+    "category":["ilustracion"],
+    "desc":"Para esta consigna, se nos dió ver el capitulo 'White Christmas', y crear un dibujo en base a la misma. No me puedo acordar de la trama al 100%, pero sé que iba sobre dos diferentes protagonistas y como la tecnología presente terminaron poniendo a ambos en situaciones opuestas pero igualmente desesperantes. Justamente eso refleja mi dibujo, un mismo final trágico pero dado por dos puntos de vista distintos.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/eyesherb.jpg",
+        "alt":"Dibujo de dos ojos"
+    }],
+    "extUrl":""
+},
+{
+    "title":"Poster Delicatessen",
+    "slug":"delicatessen",
+    "year":"2023",
+    "category":["ilustracion","diseño"],
+    "desc":"ilustracion de poster para la pelicula Delicatessen.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/FDD_Delicatessenherbertia.png",
+        "alt":"Poster claroscuro iluminado por los bordes de una escalera y la planta baja, donde se halla la sombra de una figura humana con cuchillos."
+    },
+    {
+        "url":"https://file.garden/atbLVIZJge080b1z/FDD_Delicatessenherbertiav2.png",
+        "alt":"Poster claroscuro iluminado por los bordes de una escalera y la planta baja, donde se halla la sombra de una figura humana con cuchillos."
+    }],
+    "extUrl":""
+},
+{
+    "title":"La Larga Historia de la Humanidad",
+    "slug":"dogs",
+    "year":"2025",
+    "category":["video"],
+    "desc":"Una recopilacion de perros a lo largo de toda la historia.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/doggies.png",
+        "alt":"Collage de diversos perros a través del tiempo"
+    }],
+    "extUrl":"https://youtu.be/lWkZtVu7AgM"
+},
+{
+    "title":"Gingko bilboa - Spread de revista",
+    "slug":"gingko",
+    "year":"2022",
+    "category":["diseño"],
+    "desc":"Estos diseños originalmente le pertenecían a un spread de revista en base a un texto dado. Tuve suerte que me tocara uno sobre mis árboles favoritos, el Ginkgo.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/FDD_DoblePaginaFinal1.png",
+        "alt":"Diseño de revista con texto hablando sobre el gingko"
+    }],
+    "extUrl":""
+},
+{
+    "title":"Ogaraití",
+    "slug":"ogaraiti",
+    "year":"2024",
+    "category":["diseño","ilustracion"],
+    "desc":"Esta iconografía interactiva fue diseñada para supuestamente mostrarse en una pantalla gigante, por lo que todos los elementos fueron consolidados en un gran lienzo. Fui otorgada la leyenda del Hogaraiteg/Ogaraití para trabajar, conocida casualmente como el origen del ave nacional de la Argentina; el Hornero. Fue muy interesante investigar sobre la cultura (Mbya) Guaraní y su estado actual en la Argentina. Todos los graficos presentes fueron dibujos vectorizados en Adobe Illustrator y colocados como SVG en Figma; en donde fueron dados distintos overlays en base a la info correspondiente. Además, toda la paleta de colores fue escogida a partir de fotos de la selva misionera.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/ogaraiti/SinAves.png",
+        "alt":"Infografia interactiva e ilustrada sobre la leyenda guarani del hornero."
+    }],
+    "extUrl":"https://www.instagram.com/p/DM5o7y7s9L3/"
+},
+{
+    "title":"Papillio",
+    "slug":"papillio",
+    "year":"2024",
+    "category":["ilustracion"],
+    "desc":"Dibujos y diseños de personajes para un megaproyecto entregable.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/portada.png",
+        "alt":"Portada Papillio"
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/characterlineup.png",
+        "alt":"Lineup de los Personajes"
+    },
+{
+    "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/weapons.png",
+    "alt":"Lineup de los props usados en Papillio"
+},
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/renderescena2.png",
+        "alt":"Escena 1 de Papillio: El Padre Archon con el clerigo en una escena fria y distante."
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/renderescena1.png",
+        "alt":"Escena 2 de Papillio: Rodri recuperandose de matar a uno de los angeles falsos."
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/proyectoTPArte/renderescena3.png",
+        "alt":"Escena 3 de Papillio: La pequeña Julia viendo algo ocurriendo dentro de la iglesia."
+    }],
+    "extUrl":""
+},
+{
+    "title":"Waldi - Munich 1972",
+    "slug":"waldi",
+    "year":"2024",
+    "category":["animacion","video"],
+    "desc":"En una de las asignaturas, se nos dió de animar un personaje en base a formas. Los Juegos Olimpicos y su diseño grafico son unos de mis intereses principales, así que fui por animar a Waldi, mascota de los juegos olímpicos de Munich 1972. La animacion se dió en base a recrear el perrito en Ilustrator, y a cada capa otorgarle movimiento propio. El sonido usado proviene de Freesound.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/waldi.png",
+        "alt":"Waldi"
+    }],
+    "extUrl":"https://youtu.be/HHJnlQVvSdw"
+},
+{
+    "title":"7mo Piso - Animaciones",
+    "slug":"7mopiso",
+    "year":"2025",
+    "category":["animacion","ilustracion","diseño","video"],
+    "desc":"Animaciones surtidas para una presentación de un hipotetico canal de streaming de la UMAI, '7mo Piso'.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/7mopiso.png",
+        "alt":"Poster 7mo Piso"
+    }],
+    "extUrl":""
+},
+{
+    "title":"TEA Time - Cafetería inclusiva",
+    "slug":"teatime",
+    "year":"2025",
+    "category":["diseño"],
+    "desc":"Diseño de un emprendimiento hipotetico para una campaña de marketing; una cafeteria manejada por personas neurodivergentes. (Inspirada en Casahumana y Alamesa). El diseño de los iconos proviene de Magnifik (Antes Freepik).",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/teatime/splasharttt.png",
+        "alt":"Splash Art de Tea Time"
+    },
+    {
+        "url":"https://file.garden/atbLVIZJge080b1z/teatime/tticon.png",
+        "alt":"Icono de Tea Time"
+    },{
+        "url":"https://file.garden/atbLVIZJge080b1z/teatime/teatimeinicio.png",
+        "alt":"Diseño de pantalla de inicio TEA Time"
+    },{
+        "url":"https://file.garden/atbLVIZJge080b1z/teatime/Men%C3%BA.png",
+        "alt":"Menu virtual TEA Time"
+    }
+    ],
+    "extUrl":""
+},
+{
+    "title":"Video Introductorio",
+    "slug":"intro",
+    "year":"2024",
+    "category":["video","animacion","diseño"],
+    "desc":"Video corto a modo de introducción mía y de mis proyectos.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/introimage.png",
+        "alt":"Portada de la intro animada"
+    }],
+    "extUrl":"https://youtu.be/TbcwDNI21OE"
+},
+{
+    "title":"Maimo GAME ROOM",
+    "slug":"gameroom",
+    "year":"2024",
+    "category":["programacion"],
+    "desc":"Página con varios juegos programados en HTML/CSS/JS. Ta te ti y Generala fueron hechos en clase, mientras que Simón Dice fue una creación propia (Con inspiración de un tutorial).",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/tateti.png",
+        "alt":"Ta te ti"
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/generala.png",
+        "alt":"Generala"
+    },
+{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/simonsays.png",
+        "alt":"Simon Dice"
+    }],
+    "extUrl":"https://herbertialahue.neocities.org/simonsays/"
+},
+{
+    "title":"Sky Battle Game",
+    "slug":"skybattle",
+    "year":"2024",
+    "category":["programacion"],
+    "desc":"Juego realizado con HTML/CSS/JS y estilizado con varios assets de RPG Maker. Usa las flechas del teclado para moverte y capturar al diabilito, sin chocarte por los muros. Pulsa SHIFT para cambiar de forma, con mas velocidad pero más dificil de controlar.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/skybattle.png",
+        "alt":"Sky battle"
+    }],
+    "extUrl":"https://herbertialahue.neocities.org/skybattle"
+},
+{
+    "title":"Radiomontaje",
+    "slug":"radiomont",
+    "year":"2023",
+    "category":["audio"],
+    "desc":"Historia auditiva realizada con varios audios pertenecientes de Freesound.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/radiomontportada.png",
+        "alt":"Portada caricaturizada del Radiomontaje"
+    }],
+    "extUrl":"https://file.garden/atbLVIZJge080b1z/audios/RadioMontCorregido.mp3"
+},
+{
+    "title":"Página Bariloche",
+    "slug":"barilo",
+    "year":"2023",
+    "category":["programacion"],
+    "desc":"Página/proyecto a mood",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/bariloche.png",
+        "alt":"Hub de Bariloche"
+    },{
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/pajaro.png",
+        "alt":"Pajarito"
+    },
+    {
+        "url":"https://file.garden/atbLVIZJge080b1z/coding/galeria.png",
+        "alt":"Galeria click & drag"
+    }
+],
+    "extUrl":"https://herbertialahue.neocities.org/bariloche/home"
+},
+{
+    "title":"Cafetera SMEG",
+    "slug":"3dsmeg",
+    "year":"2024",
+    "category":["3D"],
+    "desc":"Modelado de una cafetera de la marca SMEG para una consigna.",
+    "image":[{
+        "url":"https://file.garden/atbLVIZJge080b1z/3d/renderfinal.png",
+        "alt":"Modelo 3D renderizado"
+    },{
+        "url":"https://file.garden/atbLVIZJge080b1z/3d/rendercycles.png",
+        "alt":"Modelo 3D con render Cycles"
+    }],
+    "extUrl":""
+}]

@@ -13,7 +13,7 @@ import SocMedNav from '../components/socMedNav.astro';
         font-family: var(--font-michroma);
     }
 
-    a{
+    li a{
         display: flex;
         width:fit-content;
         align-items: center;
@@ -29,27 +29,11 @@ import SocMedNav from '../components/socMedNav.astro';
     }
 
     .icon {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease;
 }
 
 li:hover .icon {
   opacity: 1;
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-.fadeInUp-animation {
-  animation: 1.5s fadeInUp;
 }
 
 </style>
@@ -59,24 +43,27 @@ li:hover .icon {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Test</title>
+    <title>Portafolio Herbertia</title>
     <Font cssVariable="--font-michroma"/>
   </head>
   <body class="h-lvh flex justify-center items-center">
-    <div class="bg-amber-200 h-fit flex flex-col lg:flex-row w-[15em] lg:w-[25em] gap-5 lg:gap-3 items-center rounded-lg p-25 fadeInUp-animation" style="padding: 2em;">
+    <main class="bg-amber-200 h-fit rounded-lg fadeInUp-animation flex flex-col gap-4 p-5 py-6">
+        <div class="flex flex-col lg:flex-row w-[15em] lg:w-[22em] gap-5 lg:gap-3 items-center justify-center">
         <div class="flex flex-col items-center gap-2">
             <Image src={AvatarIcon} alt={"Icon"} width={100} height={100} class="rounded-full"/>
-            <h1 class="text-1xl font-bold">Herbertia Lahué</h1>
+            <p class="text-1xl font-bold lg:text-[0.9em]">Herbertia Lahué</p>
             <SocMedNav/>
         </div>
         <nav>
             <ul>
-                <li><a href="/about"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/> <span class="hvr-underline-from-left">Sobre Mí</span></a></li>
-                <li><a href="/works"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/> <span class="hvr-underline-from-left">Proyectos</span></a></li>
-                <li><a href="/links"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/> <span class="hvr-underline-from-left">Directorio</span></a></li>
-                 <li><a href="/souvenir"><Icon width={15} height={15} fill={"#FFFFFF"} class="icon"/> <span class="hvr-underline-from-left">Souvenir</span></a></li>
+                <li><a href="/about"><Icon width={15} height={15} fill={"currentColor"} class="icon lg:opacity-0 opacity-100"/> <span class="hvr-underline-from-left">Sobre Mí</span></a></li>
+                <li><a href="/works"><Icon width={15} height={15} fill={"currentColor"} class="icon lg:opacity-0 opacity-100"/> <span class="hvr-underline-from-left">Proyectos</span></a></li>
+                <li><a href="/links"><Icon width={15} height={15} fill={"currentColor"} class="icon lg:opacity-0 opacity-100"/> <span class="hvr-underline-from-left">Directorio</span></a></li>
+                <li><a href="/souvenir"><Icon width={15} height={15} fill={"currentColor"} class="icon lg:opacity-0 opacity-100"/> <span class="hvr-underline-from-left">Souvenir</span></a></li>
             </ul>
         </nav>
-    </div>
+        </div>
+        <a href="/credits" class="text-center mx-auto w-fit text-[0.75em] tracking-wide">(Créditos)</a>
+    </main>
   </body>
 </html>
