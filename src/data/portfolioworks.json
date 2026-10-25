@@ -123,7 +123,7 @@
     "slug":"7mopiso",
     "year":"2025",
     "category":["animacion","ilustracion","diseño","video"],
-    "desc":"test",
+    "desc":"Animaciones surtidas para una presentación de un hipotetico canal de streaming de la UMAI, '7mo Piso'.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/7mopiso.png",
         "alt":"Poster 7mo Piso"
@@ -135,7 +135,7 @@
     "slug":"teatime",
     "year":"2025",
     "category":["diseño"],
-    "desc":"test",
+    "desc":"Diseño de un emprendimiento hipotetico para una campaña de marketing; una cafeteria manejada por personas neurodivergentes. (Inspirada en Casahumana y Alamesa). El diseño de los iconos proviene de Magnifik (Antes Freepik).",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/teatime/splasharttt.png",
         "alt":"Splash Art de Tea Time"
@@ -158,7 +158,7 @@
     "slug":"intro",
     "year":"2024",
     "category":["video","animacion","diseño"],
-    "desc":"test",
+    "desc":"Video corto a modo de introducción mía y de mis proyectos.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/introimage.png",
         "alt":"Portada de la intro animada"
@@ -170,7 +170,7 @@
     "slug":"gameroom",
     "year":"2024",
     "category":["programacion"],
-    "desc":"test",
+    "desc":"Página con varios juegos programados en HTML/CSS/JS. Ta te ti y Generala fueron hechos en clase, mientras que Simón Dice fue una creación propia (Con inspiración de un tutorial).",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/coding/tateti.png",
         "alt":"Ta te ti"
@@ -190,7 +190,7 @@
     "slug":"skybattle",
     "year":"2024",
     "category":["programacion"],
-    "desc":"test",
+    "desc":"Juego realizado con HTML/CSS/JS y estilizado con varios assets de RPG Maker. Usa las flechas del teclado para moverte y capturar al diabilito, sin chocarte por los muros. Pulsa SHIFT para cambiar de forma, con mas velocidad pero más dificil de controlar.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/coding/skybattle.png",
         "alt":"Sky battle"
@@ -202,7 +202,7 @@
     "slug":"radiomont",
     "year":"2023",
     "category":["audio"],
-    "desc":"test",
+    "desc":"Historia auditiva realizada con varios audios pertenecientes de Freesound.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/radiomontportada.png",
         "alt":"Portada caricaturizada del Radiomontaje"
@@ -214,7 +214,7 @@
     "slug":"barilo",
     "year":"2023",
     "category":["programacion"],
-    "desc":"test",
+    "desc":"Página/proyecto a mood",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/coding/bariloche.png",
         "alt":"Hub de Bariloche"
