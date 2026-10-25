@@ -15,6 +15,15 @@ import Arrow from '../assets/svg/charm--arrow-down.svg'
         padding-left: 1.5em;
     }
 
+    .skill{
+        width: fit-content;
+        max-width: 10em;
+    }
+
+    .icon{
+        width: fit-content;
+    }
+
     h3{
         color: darkmagenta;
         font-weight: bold;
@@ -33,10 +42,20 @@ import Arrow from '../assets/svg/charm--arrow-down.svg'
     ul{
         margin-bottom: 0.5em;
     }
+
+    @media screen and (min-width: 636px) {
+        li{
+            font-size: 0.85em;
+        }
+
+        .skill{
+                    max-width: 20em;
+        }
+    }
 </style>
-<section class="grid grid-cols-3 gap-x-5 gap-y-10 w-[80%] my-6 ml-5">
-<div class="w-fit">
-    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+<section class="grid grid-cols-2 lg:grid-cols-4 gap-x-5 lg:gap-y-8 gap-y-5 lg:w-[90%] my-3 lg:my-6 ml-5">
+<div class="skill">
+    <div class="icon rounded-full bg-fuchsia-950 p-2.5">
         <IconDraw width={30} height={30} fill={"currentColor"}/>
     </div>
     <h3>Ilustración</h3>
@@ -48,8 +67,8 @@ import Arrow from '../assets/svg/charm--arrow-down.svg'
     <a href="/works/tags/ilustracion" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
 </div>
 
-<div class="w-fit">
-    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+<div class="skill">
+    <div class="icon rounded-full bg-fuchsia-950 p-2.5 ">
         <IconImage width={30} height={30} fill={"currentColor"}/>
     </div>
     <h3>Diseño</h3>
@@ -61,8 +80,8 @@ import Arrow from '../assets/svg/charm--arrow-down.svg'
         <a href="/works/tags/diseño" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
 </div>
 
-<div class="w-fit">
-    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+<div class="skill">
+    <div class="icon rounded-full bg-fuchsia-950 p-2.5">
         <IconVideo width={30} height={30} fill={"currentColor"}/>
     </div>
     <h3>Edición de Video</h3>
@@ -73,11 +92,11 @@ import Arrow from '../assets/svg/charm--arrow-down.svg'
     <a href="/works/tags/video" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
 </div>
 
-<div class="w-fit">
-    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+<div class="skill">
+    <div class="icon rounded-full bg-fuchsia-950 p-2.5 w-fit">
         <IconCode width={30} height={30} fill={"currentColor"}/>
     </div>
-    <h3>Programación</h3>
+    <h3 class="text-[0.75em] lg:text-[1em]">Programación</h3>
     <ul>
         <li>HTML/CSS/JS</li>
         <li>NextJS</li>
@@ -88,8 +107,8 @@ import Arrow from '../assets/svg/charm--arrow-down.svg'
     <a href="/works/tags/programacion" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
 </div>
 
-<div class="w-fit">
-    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+<div class="skill">
+    <div class="icon rounded-full bg-fuchsia-950 p-2.5 ">
         <Icon3D width={30} height={30} fill={"currentColor"}/>
     </div>
     <h3>Modelado 3D</h3>
@@ -100,8 +119,8 @@ import Arrow from '../assets/svg/charm--arrow-down.svg'
     <a href="/works/tags/3D" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
 </div>
 
-<div class="w-fit">
-    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+<div class="skill">
+    <div class="icon rounded-full bg-fuchsia-950 p-2.5">
         <IconAni width={30} height={30} fill={"currentColor"}/>
     </div>
     <h3>Animación</h3>
