@@ -110,8 +110,8 @@
     "title":"Waldi - Munich 1972",
     "slug":"waldi",
     "year":"2024",
-    "category":["animación","video"],
-    "desc":"En una de las asignaturas, se nos dió de animar un personaje en base a formas. Los Juegos Olimpicos y su diseño grafico son unos de mis intereses principales, así que fui por animar a Waldi, mascota de los juegos olímpicos de Munich 1972. La animación se dió en base a recrear el perrito en Ilustrator, y a cada capa otorgarle movimiento propio. El sonido usado proviene de Freesound.",
+    "category":["animacion","video"],
+    "desc":"En una de las asignaturas, se nos dió de animar un personaje en base a formas. Los Juegos Olimpicos y su diseño grafico son unos de mis intereses principales, así que fui por animar a Waldi, mascota de los juegos olímpicos de Munich 1972. La animacion se dió en base a recrear el perrito en Ilustrator, y a cada capa otorgarle movimiento propio. El sonido usado proviene de Freesound.",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/waldi.png",
         "alt":"Waldi"
@@ -122,7 +122,7 @@
     "title":"7mo Piso - Animaciones",
     "slug":"7mopiso",
     "year":"2025",
-    "category":["animación","ilustracion","diseño","video"],
+    "category":["animacion","ilustracion","diseño","video"],
     "desc":"test",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/7mopiso.png",
@@ -157,7 +157,7 @@
     "title":"Video Introductorio",
     "slug":"intro",
     "year":"2024",
-    "category":["video","animación","diseño"],
+    "category":["video","animacion","diseño"],
     "desc":"test",
     "image":[{
         "url":"https://file.garden/atbLVIZJge080b1z/introimage.png",

@@ -1,0 +1,116 @@
+---
+import IconAni from '../assets/svg/skills/boxicons--animation-bounce-filled.svg'
+import IconCode from '../assets/svg/skills/boxicons--code.svg'
+import Icon3D from '../assets/svg/skills/boxicons--cube.svg'
+import IconImage from '../assets/svg/skills/boxicons--image.svg'
+import IconVideo from '../assets/svg/skills/boxicons--film.svg'
+import IconDraw from '../assets/svg/skills/boxicons--pencil-draw-filled.svg'
+import Arrow from '../assets/svg/charm--arrow-down.svg'
+
+---
+<style>
+
+    ul{
+        list-style-image: url('../assets/svg/asterisk.svg');
+        padding-left: 1.5em;
+    }
+
+    h3{
+        color: darkmagenta;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 0.5em;
+    }
+
+    svg{
+        color:white;
+    }
+
+    a svg{
+        color:black;
+    }
+
+    ul{
+        margin-bottom: 0.5em;
+    }
+</style>
+<section class="grid grid-cols-3 gap-x-5 gap-y-10 w-[80%] my-6 ml-5">
+<div class="w-fit">
+    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+        <IconDraw width={30} height={30} fill={"currentColor"}/>
+    </div>
+    <h3>Ilustración</h3>
+    <ul>
+        <li>Adobe Photoshop</li>
+        <li>Firealpaca</li>
+        <li>Medibang Paint</li>
+    </ul>
+    <a href="/works/tags/ilustracion" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
+</div>
+
+<div class="w-fit">
+    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+        <IconImage width={30} height={30} fill={"currentColor"}/>
+    </div>
+    <h3>Diseño</h3>
+    <ul>
+        <li>Figma</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe Photoshop</li>
+    </ul>
+        <a href="/works/tags/diseño" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
+</div>
+
+<div class="w-fit">
+    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+        <IconVideo width={30} height={30} fill={"currentColor"}/>
+    </div>
+    <h3>Edición de Video</h3>
+    <ul>
+        <li>Adobe After Effects</li>
+        <li>Shotcut</li>
+    </ul>
+    <a href="/works/tags/video" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
+</div>
+
+<div class="w-fit">
+    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+        <IconCode width={30} height={30} fill={"currentColor"}/>
+    </div>
+    <h3>Programación</h3>
+    <ul>
+        <li>HTML/CSS/JS</li>
+        <li>NextJS</li>
+        <li>React</li>
+        <li>AstroJS</li>
+        <li>Tailwind</li>
+    </ul>
+    <a href="/works/tags/programacion" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
+</div>
+
+<div class="w-fit">
+    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+        <Icon3D width={30} height={30} fill={"currentColor"}/>
+    </div>
+    <h3>Modelado 3D</h3>
+    <ul>
+        <li>Blender</li>
+        <li>Firealpaca</li>
+    </ul>
+    <a href="/works/tags/3D" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
+</div>
+
+<div class="w-fit">
+    <div class="rounded-full bg-fuchsia-950 p-2.5 w-fit">
+        <IconAni width={30} height={30} fill={"currentColor"}/>
+    </div>
+    <h3>Animación</h3>
+    <ul>
+        <li>Adobe After Effects</li>
+        <li>Adobe Animate</li>
+        <li>Stop-motion</li>
+    </ul>
+    <a href="/works/tags/animacion" class="flex items-center gap-1 text-[0.85em] font-bold mt-2.5">Ver más <Arrow width={20} height={20} fill="currentColor" class="rotate-270"/></a>
+</div>
+
+</section>
