@@ -4,6 +4,7 @@ import Icon from '../assets/svg/asterisk.svg';
 import Arrow from '../assets/svg/charm--arrow-down-right.svg';
 import '../styles/global.css';
 
+
 const works = await getCollection('projects');
 const workCat = [...new Set(works.map((work) => work.data.category).flat())]
 
