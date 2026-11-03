@@ -14,12 +14,13 @@
   "dependencies": {
     "@astrojs/node": "^11.1.9",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.5",
+    "astro": "^7.4.5",
     "astro-embed": "^0.14.0",
     "tailwindcss": "^4.3.3"
   },
   "allowScripts": {
-    "esbuild": true
+    "esbuild": true,
+    "@parcel/watcher@2.6.0": true
   },
   "devDependencies": {
     "sass": "^1.106.1",
