@@ -21,12 +21,12 @@ const projects = defineCollection({
         slug: z.string(),
         year: z.string(),
         category:z.array(z.string()).min(1),
-        desc: z.string(),
+        description: z.string(),
         image: z.array(z.object({
             url: z.string(),
             alt: z.string()
         })).min(1),
-        extUrl:z.string()
+        exturl:z.string()
     })
 })
 
