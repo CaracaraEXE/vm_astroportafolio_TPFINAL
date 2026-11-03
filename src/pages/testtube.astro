@@ -1,0 +1,13 @@
+---
+import { createServerClient } from "../lib/supabase";
+
+const supabase = createServerClient();
+const { data:linkList, error } = await supabase.from('linklist') .select('*')
+console.log({ linkList, error })
+
+---
+<main>
+    {linkList?.map((link:any) => (
+        <p>{link.name}</p>
+    ))}
+</main>
