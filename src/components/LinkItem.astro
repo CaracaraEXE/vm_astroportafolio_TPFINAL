@@ -2,6 +2,7 @@
 import Arrow from '.././assets/svg/charm--arrow-down.svg'
 import Icon from '../assets/svg/asterisk.svg';
 import '../styles/global.css';
+import ListBackup from '../data/linklist.json'
 import { createServerClient } from "../lib/supabase";
 
 const supabase = createServerClient();
@@ -9,7 +10,13 @@ const { data:linkList, error } = await supabase.from('linklist') .select('*')
 
 const {category} = Astro.props;
 
-const links = linkList?.filter(item => item.category === category);
+let links
+
+linkList?
+links = linkList?.filter(item => item.category === category)
+:
+links = ListBackup?.filter(item => item.category === category);
+
 ---
 <script>
     import '../scripts/dropdown.js'
