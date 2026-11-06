@@ -1,3 +1,4 @@
+import node from '@astrojs/node'
 import { webcore } from "webcoreui/integration";
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
@@ -6,10 +7,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
-  adapter: node({
-    mode: 'standalone',
-  }),
   vite: {
     plugins: [tailwindcss()],
     css:{
@@ -20,6 +17,10 @@ export default defineConfig({
       }
     }
   },
+   output: 'server',
+  adapter: node({
+    mode: 'standalone',
+  }),
 
   fonts: [{
     provider: fontProviders.fontsource(),
