@@ -17,9 +17,6 @@ export default defineConfig({
       }
     }
   },
-  adapter: node({
-    mode: 'standalone',
-  }),
   fonts: [{
     provider: fontProviders.fontsource(),
     name: "Michroma",
