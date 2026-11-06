@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Gallery from '../../components/Gallery.astro'
+import Categories from "../../components/Categories.astro";
+import '../../styles/global.css'
+import { createServerClient } from '../../lib/supabase.ts';
+
+const supabase = createServerClient();
+const { data:works, error } = await supabase.from('works').select('*')
+
+works?.sort((a:any,b:any) => b.year - a.year)
+
+const workCat = [...new Set(works?.map((work:any) => work.category).flat())]
+
+---
+<style>
+    p{
+        margin-bottom: 0px;
+        margin-left: 0.5em;
+        font-weight: bold;
+    }
+</style>
+<BaseLayout>
+    <h1 class="mb-[0.25em]">PROYECTOS</h1>
+    <p>Filtra por categorías:</p>
+    <Categories categories={workCat}/>
+<Gallery works={works}/>
+</BaseLayout>

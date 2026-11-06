@@ -1,0 +1,91 @@
+---
+import Icon from '../assets/svg/asterisk.svg';
+import Arrow from '../assets/svg/charm--arrow-down-right.svg';
+import '../styles/global.css';
+import { createServerClient } from "../lib/supabase";
+
+const supabase = createServerClient();
+const { data:works, error } = await supabase.from('works') .select('*')
+
+const workCat = [...new Set(works?.map((work) => work.category).flat())]
+
+---
+<style>
+
+    *{
+        font-family: var(--font-michroma);
+    }
+
+    a, button{
+        display: flex;
+        width:fit-content;
+        align-items: center;
+        gap:2px;
+        height: 2em;
+        transition:font-weight 0.25s ease;
+        font-weight: bold;
+    }
+
+    button{
+      gap:0;
+    }
+
+    li a:hover, button:hover{
+      color:darkmagenta;
+      font-weight: bold;
+    }
+
+    .icon {
+      transition: opacity 0.3s ease;
+    }
+
+button:hover .icon, a:hover .icon {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+</style>
+<script>
+  import "../scripts/dropdown.js"
+</script>
+<nav class="pt-5 lg:pl-2.5">
+    <ul>
+        <li class="text-2xl lg:text-[1em]"><a href="/" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Inicio</span></a></li>
+        <li>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em] hvr-icon-down"><Arrow width={20} height={25} fill={"currentColor"} class="icon opacity-100 cursor-pointer scale-125 hvr-icon"/>Sobre mí</button>
+          <ul class="ml-5 sub-menu">
+          <div>
+            <li class="text-1xl lg:text-[0.75em]"><a href="/about#bio"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Biografía</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#past"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Experiencia</span></a></li>
+            <li class="lg:text-[0.75em]"><a href="/about#skills"><Icon width={15} height={15} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Habilidades</span></a></li>
+          </div>
+          </ul>
+        </li>
+        <li>
+          <button class="dropdown-opener gap-0 text-2xl lg:text-[1em] hvr-icon-down"><Arrow width={20} height={20} class="icon hvr-icon opacity-100 scale-125 cursor-pointer"/>Proyectos</button>
+          <ul class="ml-5 sub-menu">
+          <div>
+                                                  <li class="text-1xl lg:text-[0.75em]"><a href={`/works`}><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Todos</span></a></li>
+            {workCat.map((category) =>(
+                          <li class="text-1xl lg:text-[0.75em]"><a href={`/works/tags/${category}`}><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">{category}</span></a></li>
+            ))}
+          </div>
+          </ul>
+        </li>
+        <li class="text-2xl lg:text-[1em]"><a href="/links" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Links</span></a></li>
+    </ul>
+</nav>

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 1.75em;
+    color:darkmagenta;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5em;
+        color:darkmagenta;
+}
+
+p{
+        margin-bottom: 1em;
+    }
+
+@media screen and (min-width: 636px) {
+  p{
+    font-size: 0.85em;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+
+.sub-menu{
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 300ms ease-in-out;
+
+  > div{
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.sub-menu.show{
+  grid-template-rows: 1fr;
+}
+
+svg{
+  transition: transform 0.25s ease-in !important
+}
+
+.rotate svg{
+  transform: rotate(180deg) !important
+}

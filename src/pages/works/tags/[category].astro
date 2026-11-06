@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Gallery from "../../../components/Gallery.astro";
+import { Breadcrumb } from "webcoreui/astro";
+import { createServerClient } from "../../../lib/supabase.ts";
+
+export const prerender = true
+
+export async function getStaticPaths(){
+
+    const supabase = createServerClient();
+    const { data:works, error } = await supabase.from('works').select('*')
+
+    const uniqueCategories = [...new Set(works?.map((work) => work.category).flat())];
+
+    return uniqueCategories.map((category:any) => {
+        const filteredWorks = works?.filter((work:any) =>
+        work.category.includes(category)
+    );
+    return {
+        params: { category },
+        props: {works: filteredWorks}
+    }
+    })
+}
+
+const {category} = Astro.params;
+const {works} = Astro.props;
+
+const breadcrumbs = [
+    {label: 'Proyectos', href: '/works'},
+    {label: `${category}`, href: `/works/${category}`}
+]
+
+---
+<BaseLayout>
+    <Breadcrumb items={breadcrumbs}/>
+    <h1>PROYECTOS</h1>
+<Gallery works={works}/>
+</BaseLayout>
+

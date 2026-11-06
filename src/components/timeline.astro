@@ -1,0 +1,25 @@
+---
+import '../styles/global.css'
+import Timelinedate from './timelinedate.astro';
+
+const experiences = [{
+    place:"Instituto San Jose",
+    title:"Bachiller en Ciencias Sociales",
+    date:"MARZO 2016 - NOVIEMBRE 2020"
+},
+{
+    place:"Universidad Maimónides",
+    title:"Licenciatura en Tecnologia Multimedial",
+    date:"MARZO 2022 - ACTUALIDAD"
+}
+];
+
+
+---
+<ul id="timeline" class="pb-5 lg:pb-0">
+    {
+        experiences.map((exp: any) => (
+           <Timelinedate place={exp.place} title={exp.title} date={exp.date}/>
+        ))
+    }
+</ul>

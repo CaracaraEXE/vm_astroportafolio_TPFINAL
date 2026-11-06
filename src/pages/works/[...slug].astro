@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import WorkLayout from "../../layouts/WorkLayout.astro";
+import { createServerClient } from "../../lib/supabase.ts";
+
+export const prerender = true
+
+export async function getStaticPaths(){
+
+    const supabase = createServerClient();
+    const { data:works, error } = await supabase.from('works').select('*')
+
+    return works?.map(work => ({
+        params:{slug: work.slug}, props:{work}
+    }));
+}
+
+const { work } = Astro.props;
+
+---
+<WorkLayout work={work}/>
