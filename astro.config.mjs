@@ -1,4 +1,3 @@
-import node from '@astrojs/node'
 import { webcore } from "webcoreui/integration";
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
