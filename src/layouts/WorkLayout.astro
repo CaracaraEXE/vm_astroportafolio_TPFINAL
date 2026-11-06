@@ -18,6 +18,16 @@ const breadcrumbs = [
     tr, td{
         height: fit-content;
     }
+
+    audio::-webkit-media-controls-panel{
+        background-color: white;
+    }
+
+    audio::-webkit-media-controls-play-button{
+        background-color: darkmagenta;
+        color: white;
+        border-radius: 5em;
+    }
 </style>
 <BaseLayout>
 <Breadcrumb items={breadcrumbs}/>
@@ -47,7 +57,7 @@ const breadcrumbs = [
 
 {work.category.find((cat:any) => (cat === "audio"))?
 <h2 class="mb-3">PREVIEW (Audio)</h2>
-<audio src={work.exturl} controls/>
+<audio src={work.exturl} controls controlslist="nodownload"/>
 :
 ""
 }
