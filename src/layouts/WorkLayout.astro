@@ -6,7 +6,7 @@ import Categories from "../components/Categories.astro";
 import {YouTube} from 'astro-embed';
 import '../styles/hover.css';
 
-const {work} = Astro.props;
+const { work } = Astro.props;
 
 const breadcrumbs = [
     {label: 'Proyectos', href: '/works'},
@@ -17,6 +17,16 @@ const breadcrumbs = [
 <style>
     tr, td{
         height: fit-content;
+    }
+
+    audio::-webkit-media-controls-panel{
+        background-color: white;
+    }
+
+    audio::-webkit-media-controls-play-button{
+        background-color: darkmagenta;
+        color: white;
+        border-radius: 5em;
     }
 </style>
 <BaseLayout>
@@ -43,25 +53,25 @@ const breadcrumbs = [
         <td class="pl-2.5"><Categories categories={work.category}/></td>
     </tr>
 </table>
-<p>{work.desc}</p>
+<p>{work.description}</p>
 
 {work.category.find((cat:any) => (cat === "audio"))?
 <h2 class="mb-3">PREVIEW (Audio)</h2>
-<audio src={work.extUrl} controls/>
+<audio src={work.exturl} controls controlslist="nodownload"/>
 :
 ""
 }
 
 {work.category.find((cat:any) => (cat === "video"))?
 <h2 class="mb-3">PREVIEW (Video)</h2>
-<YouTube id={work.extUrl}/>
+<YouTube id={work.exturl}/>
 :
 ""
 }
 
 {work.category.find((cat:any) => (cat === "programacion" || cat === "texto"))?
 <h2 class="mb-3">PREVIEW</h2>
-<a href={work.extUrl} class="inline-block uppercase p-1.5 bg-fuchsia-950 text-white px-2 m-1 rounded-sm">Link Externo</a>
+<a href={work.exturl} class="inline-block uppercase p-1.5 bg-fuchsia-950 text-white px-2 m-1 rounded-sm">Link Externo</a>
 :
 ""
 }

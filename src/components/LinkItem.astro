@@ -1,12 +1,22 @@
 ---
 import Arrow from '.././assets/svg/charm--arrow-down.svg'
 import Icon from '../assets/svg/asterisk.svg';
-import List from '../data/linklist.json';
 import '../styles/global.css';
+import ListBackup from '../data/linklist.json'
+import { createServerClient } from "../lib/supabase";
+
+const supabase = createServerClient();
+const { data:linkList, error } = await supabase.from('linklist') .select('*')
 
 const {category} = Astro.props;
 
-const links = List.filter(item => item.category === category);
+let links
+
+linkList?
+links = linkList?.filter(item => item.category === category)
+:
+links = ListBackup?.filter(item => item.category === category);
+
 ---
 <script>
     import '../scripts/dropdown.js'
@@ -19,8 +29,8 @@ const links = List.filter(item => item.category === category);
     <ul class="sub-menu">
         <div>
             {
-                links.map(link =>
-                    <li class="flex flex-col py-2"><a href={link.url} class="border-b-2 border-fuchsia-900 border-dotted text-[1.25em] lg:text-[1em] text-fuchsia-900 uppercase leading-6 flex gap-1 font-black hover:tracking-wide transform-all duration-75"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100"/> {link.name}</a><span class="text-[0.75em]">{link.desc}</span></li>
+                links?.map(link =>
+                    <li class="flex flex-col py-2"><a href={link.url} class="border-b-2 border-fuchsia-900 border-dotted text-[1.25em] lg:text-[1em] text-fuchsia-900 uppercase leading-6 flex gap-1 font-black hover:tracking-wide transform-all duration-75"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100"/> {link.name}</a><span class="text-[0.75em]">{link.description}</span></li>
                 )
             }
         </div>
