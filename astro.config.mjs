@@ -21,7 +21,18 @@ export default defineConfig({
     provider: fontProviders.fontsource(),
     name: "Michroma",
     cssVariable: "--font-michroma",
-  }],
+  },
+{
+    provider: fontProviders.fontsource(),
+    name: "Jura",
+    cssVariable: "--font-jura",
+  },
+  {
+    provider: fontProviders.fontsource(),
+    name: "SUSE Mono",
+    cssVariable: "--font-suse",
+  }
+],
 
   integrations: [webcore()]
 });

@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3{
+      font-family: 'Michroma';
+}
+
 h1{
     font-size: 1.75em;
     color:darkmagenta;
     margin-bottom: 0.25em;
-    font-weight: bold;
 }
 
 h2{

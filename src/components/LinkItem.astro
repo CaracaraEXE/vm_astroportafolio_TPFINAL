@@ -18,6 +18,11 @@ links = linkList?.filter(item => item.category === category)
 links = ListBackup?.filter(item => item.category === category);
 
 ---
+<style>
+    a{
+        font-family: 'Michroma';
+    }
+</style>
 <script>
     import '../scripts/dropdown.js'
 </script>
@@ -30,7 +35,7 @@ links = ListBackup?.filter(item => item.category === category);
         <div>
             {
                 links?.map(link =>
-                    <li class="flex flex-col py-2"><a href={link.url} class="border-b-2 border-fuchsia-900 border-dotted text-[1.25em] lg:text-[1em] text-fuchsia-900 uppercase leading-6 flex gap-1 font-black hover:tracking-wide transform-all duration-75"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100"/> {link.name}</a><span class="text-[0.75em]">{link.description}</span></li>
+                    <li class="flex flex-col lg:flex-row my-2 lg:items-end border-b-2 border-dotted border-fuchsia-900 lg:gap-2"><a href={link.url} class="text-[1.25em] lg:text-[1em] text-fuchsia-900 uppercase leading-6 flex gap-1 font-black hover:tracking-wide transform-all duration-75"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100"/> {link.name}</a><span class="text-[0.75em]">{link.description}</span></li>
                 )
             }
         </div>

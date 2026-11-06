@@ -1,13 +1,12 @@
 ---
 import Header from "../components/Header.astro";
 import '../styles/global.css'
-import { Font } from "astro:assets";
 ---
 <style>
   *{
     padding: 0;
     margin: 0;
-     font-family: var(--font-michroma);
+     font-family: 'SUSE Mono';
   }
 
    @keyframes fadeInUp {
@@ -52,13 +51,13 @@ main{
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-        <Font cssVariable="--font-michroma"/>
-        <script src="https://u.widget.st/ar.js"></script>
-    <title>Portafolio Herbertia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Michroma&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">    <title>Portafolio Herbertia</title>
   </head>
   <body>
     <Header/>
-    <main class="lg:overflow-scroll h-lvh fadeInUp-animation">
+    <main class="fadeInUp-animation">
     <slot class="flex flex-col" />
     </main>
   </body>

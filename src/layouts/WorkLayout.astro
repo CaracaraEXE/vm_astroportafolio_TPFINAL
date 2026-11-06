@@ -15,8 +15,13 @@ const breadcrumbs = [
 
 ---
 <style>
+    a, table, ul{
+        font-family: 'Michroma';
+    }
+
     tr, td{
         height: fit-content;
+        
     }
 
     audio::-webkit-media-controls-panel{
@@ -29,7 +34,7 @@ const breadcrumbs = [
         border-radius: 5em;
     }
 </style>
-<BaseLayout>
+<BaseLayout class="overflow-scroll">
 <Breadcrumb items={breadcrumbs}/>
 <h1 class="uppercase flex items-center gap-2 border-b-2 border-fuchsia-900 border-dotted mb-5 mt-2.5"> {work.title}</h1>
 {
