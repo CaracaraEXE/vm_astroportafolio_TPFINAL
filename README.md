@@ -46,6 +46,19 @@ La informacion presente en */links* y */works* sale de la base de datos virtual 
 Ante cualquier desconexión se ha ofrecido un fallback presente en un archivo JSON, interpretado como una Colección de AstroJS para */works*.
 
 # ACCESIBILIDAD WEB
+- Pantalla responsive, el sideMenu cambia de posición y es toggleable en pantallas más chicas.
+- Tema oscuro/claro
+- Todas las combinaciones de color texto/fondo pasan los criterios de contraste de color establecidos por WCAG 2.1
+- Sitio revisado y aprobado por **WAVE Accesibility Checker** y **Axe Devtools**.
+- Todas las imagenes poseen un texto alternativo correspondiente
+
+# LIMITACIONES
+
+AstroJS es un caso muy extraño de Framework, en donde varias cosas de Next.JS se simplifican pero otras se complejizan a niveles que rozan lo absurdo. El Javascript funciona de maneras hipermega especificas al punto que no pude implementar acordemente ciertos codigos que le hubiesen ido bien a la página.
+
+Una de las features descartadas que más desee agregar en un principio fue la de una herramienta de dibujo en donde el usuario podia crear algo por su cuenta, promoviendo la creación propia en un mundo donde cada vez los algoritmos hacen el trabajo de otros. No obstante el JS del modelo que iba a usar no lograba implementarse en la página, incluso cuando traté de hacer reverse engineering y modificar las funciones en base de qué tolera Astro en interactividad. Otra idea fue hacer la herramienta en mi sitio extra de Neocities y hacer un iframe del mismo. La idea estaba casi completa (Aunque el iframe era dificil de ajustar el tamaño), pero lo que me hizo cortarlo por completo fue que no era mobile friendly. Tampoco me convencieron las otras alternativas y/o librerias que se hallaban por la web.
+
+En el futuro quisiera poder agregarle más cosas a esta página (Siempre y cuando mantenga su simplicidad). Mis dos ideas principales es un componente de busqueda de Proyectos (Por titulo) y un apartado aparte de **Blog**, aunque este es más bien una excusa para mantener a Supabase activo por más tiempo.
 
 ## 👀 Want to learn more?
 
