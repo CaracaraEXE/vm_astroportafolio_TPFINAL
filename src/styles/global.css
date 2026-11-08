@@ -44,7 +44,7 @@ html.dark, .dark main {
   border-color: darkmagenta;
 }
 
-.dark .tag:hover, .dark .gallery-caption, .dark .link-item{
+.dark .tag:hover, .dark .gallery-caption, .dark .link-item, #extbtn{
   background-color: darkmagenta;
 }
 

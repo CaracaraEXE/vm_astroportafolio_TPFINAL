@@ -22,7 +22,7 @@ const workCat = [...new Set(works?.map((work:any) => work.category).flat())]
 </style>
 <BaseLayout>
     <h1 class="mb-[0.25em]">PROYECTOS</h1>
-    <p>Filtra por categorías:</p>
+    <h2>Filtra por categorías:</h2>
     <Categories categories={workCat}/>
 <Gallery works={works}/>
 </BaseLayout>

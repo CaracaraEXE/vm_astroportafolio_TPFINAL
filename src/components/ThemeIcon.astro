@@ -25,15 +25,9 @@ import '../styles/global.css'
   :global(.dark) .sun { fill: transparent; }
   :global(.dark) .moon { fill: white; }
 </style>
-<style>
-  .sun { fill: black; }
-  .moon { fill: transparent; }
-
-  :global(.dark) .sun { fill: transparent; }
-  :global(.dark) .moon { fill: white; }
-</style>
 
 <script is:inline>
+
   const theme = (() => {
     const localStorageTheme = localStorage?.getItem("theme") ?? '';
     if (['dark', 'light'].includes(localStorageTheme)) {

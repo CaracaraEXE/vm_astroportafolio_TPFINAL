@@ -29,7 +29,20 @@ Este proyecto fue realizado gracias a las siguientes tecnologias:
 - **TailwindCSS:** Estiliza el proyecto junto el CSS regular.
 - **HoverCSS:** Libreria externa. Ofrece efectos especiales al pasar objetos por el mouse.
 
-**Importante aclaración: Se ha usado ayuda de Google Gemini a modo de consulta en ciertas partes del proceso (Trabas), pero no se usó a ningun Agente de Inteligencia Artificial para modificar el proyecto. Estoy opuesta por completo en el uso de IA Generativa en actividades creativas, asi que me niego por completo a recomendar sitios que hagan uso de la misma.**
+### USO DE INTELIGENCIA ARTIFICIAL
+Durante el proceso de este portafolio sólo se utilizó a **Google Gemini Pro (Estudiantil)** a modo de realizar consultas en las partes donde me trabé o encontré un problema extraño.
+Especificamente, consulte por los siguientes problemas:
+- Un problema de .map() con el array hard-codeado en timeline.astro (Error propio que detecté gracias a la respuesta)
+- Complicaciones con importar SVGs dentro de un componente (Al final relei la documentacion y opte por importar el SVG y usarlo como componente en si)
+- Re-adaptar el codigo del tutorial de () para realizar un dropdown-opener de forma que AstroJS lo acepte (Usando EventListeners). Ver *dropdown.js*.
+- Arreglar un schema Zod para las colecciones de AstroJS; asi como su previa importacion a través de Props y variables que extraen los datos, ej {work.data} (Deprecado al ser reemplazado por la API de Supabase).
+- Usar una imagen como `background-image`. Estaba tan deseperada que probé TODAS las respuestas que me dió, y la unica que remotamente dió algo fue *`style={'background-image: url('${herb.src}');'}*.
+- Solucionar un error de conexión de Supabase (No me ayudo para nada, pero lo solucione sola en el 2do intento de integracion)
+- Pasar los archivos JSON de */works* a un archivo CSV. *Fue una opción de último recurso, ya que todas las herramientas de conversión JSON-CSV daban formatos erroneos y que causaban problemas al tratar de importar los datos a la tabla de Supabase*
+- Arreglar un problema de Deployment con Vercel (No sirvió *y casi rompe mi proyecto,* al final me arriesgué e hice un cambio en astro.config.mjs que lo arregló aunque no se a qué costo).
+- Importar multiples fuentes en AstroJS, ya que no encontre soluciones buenas y el tutorial oficial solo cubre la importación de una. (Entre sus respuestas recordé que Google Fonts ofrece un enlace con las fuentes especificas, asi que usé eso y listo).
+
+En general, varias de las soluciones las descubrí por mi cuenta o luego fueron reemplazadas por otros cambios. No me gusta usar código dado sólo por la IA, asi que preferí usar lo minimo posible. **Tampoco quiero promover el uso de la IA en actividades artisticas, por que ninguno de los enlaces de /links posee algo que involve a la misma.**
 
 ## COMPONENTES
 
@@ -39,6 +52,7 @@ Este proyecto fue realizado gracias a las siguientes tecnologias:
 | **Header.astro**             | Ubicado al costado de la página (NO es un <aside> debido a su importancia semantica), contiene el <nav> principal (Sidemenu.astro) y otros links importantes (Créditos, redes sociales -socMednav.astro- y un toggle de tema oscuro/claro).      |
 | **LinkList.astro**           | Usado en la página de Directorio, ofrece una lista dinamica de links sugeridos filtrados por categoría correspondiente..
 | **Categories.astro**         | Botón reusable en Gallery.astro y en WorkLayout.astro el cual cataloga cada proyecto y lleva a la página de dicha categoría.     |                |
+| **ThemeIcon.astro**         | Botón presente en *index.js* y *Header.astro* que permite cambiar temas usando clases CSS y guardando información en el almacenamiento local.     |                |
 
 # BASE DE DATOS
 La informacion presente en */links* y */works* sale de la base de datos virtual **Supabase**, la cual se conecta al documento haciendo uso de una URL y una Access Key especial. *Cabe mencionar que al usar un plan gratuito, Supabase solo mantiene conexión por una semana.*
@@ -48,9 +62,9 @@ Ante cualquier desconexión se ha ofrecido un fallback presente en un archivo JS
 # ACCESIBILIDAD WEB
 - Pantalla responsive, el sideMenu cambia de posición y es toggleable en pantallas más chicas.
 - Tema oscuro/claro
-- Todas las combinaciones de color texto/fondo pasan los criterios de contraste de color establecidos por WCAG 2.1
+- Todas las combinaciones de color texto/fondo pasan los criterios de contraste de color AA establecidos por WCAG 2.1
 - Sitio revisado y aprobado por **WAVE Accesibility Checker** y **Axe Devtools**.
-- Todas las imagenes poseen un texto alternativo correspondiente
+- Todas las imagenes u otros elementos poseen un texto alternativo correspondiente (Atributo alt o title si es posible, asi como aria-label).
 
 # LIMITACIONES
 

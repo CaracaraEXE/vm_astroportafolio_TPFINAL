@@ -31,13 +31,15 @@ links = ListBackup?.filter(item => item.category === category);
     <h3>{category}</h3>
     <Arrow width={20} height={20}/>
     </button>
-    <ul class="sub-menu">
+    <section class="sub-menu">
         <div>
+            <ul>
             {
                 links?.map(link =>
                     <li class="flex flex-col lg:flex-row my-2 lg:items-end border-b-2 border-dotted border-fuchsia-900 lg:gap-2"><a href={link.url} class="text-[1.25em] lg:text-[1em] text-fuchsia-900 uppercase leading-6 flex gap-1 font-black hover:tracking-wide transform-all duration-75"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100"/> {link.name}</a><span class="text-[0.75em]">{link.description}</span></li>
                 )
             }
+            </ul>
         </div>
-    </ul>
+    </section>
 </div>

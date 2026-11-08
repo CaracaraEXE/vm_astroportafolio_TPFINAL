@@ -19,14 +19,14 @@ import ThemeIcon from "./ThemeIcon.astro";
       font-weight: bold;
     } 
     @media screen and (min-width: 636px) {
-  ul{
+  section{
       grid-template-rows: 1fr;
   }
 }
 </style>
 <header class="lg:flex lg:flex-col lg:h-full lg:flex-end pl-8 lg:p-5 pt-8 lg:pr-6 lg:max-w-[30em] lg:bg-bottom lg:bg-cover" style={`background-image: url('${herb.src}');`}>
         <button class="dropdown-opener cursor-pointer hvr-icon-rotate" aria-label="Home button"><Asterisk width={30} height={30} fill={"currentColor"} class=" hvr-icon"/></button>
-    <ul class="sub-menu">
+    <section class="sub-menu">
     <div>
         <SideMenu/>
         <section class="py-2.5 my-2.5 border-y-2 border-black">
@@ -35,5 +35,5 @@ import ThemeIcon from "./ThemeIcon.astro";
         </section>
         <ThemeIcon/>
     </div>
-    </ul>
+</section>
 </header>

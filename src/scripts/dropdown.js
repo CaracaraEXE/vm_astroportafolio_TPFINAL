@@ -7,5 +7,3 @@
         btn.classList.toggle('rotate');
       })
     })
-
-    console.log(dropBtns);
