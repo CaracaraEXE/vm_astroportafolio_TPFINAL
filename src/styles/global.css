@@ -14,16 +14,7 @@ html.dark, .dark main {
   color: #000;
 }
 
-.dark .nav-links a:hover,
-.dark .nav-links a:focus {
-  color: #0d0950;
-}
-
-.dark .nav-links a {
-  color: #fff;
-}
-
-.dark a {
+.dark .nav-links a, .dark #timeline svg, .dark a, .dark .skill a svg {
   color: #fff;
 }
 
@@ -37,7 +28,7 @@ html.dark, .dark main {
   font-weight: lighter;
 }
 
-.dark nav li a:hover, .dark nav button:hover, .dark h1, .dark h2, .dark h3:not(#timeline h3, article h3, .link-item h3), .dark #timeline svg,header button:hover{
+.dark nav li a:hover, .dark nav button:hover, .dark h1, .dark h2, .dark h3:not(#timeline h3, article h3, .link-item h3), footer a:hover, .dark header a:hover, .dark q{
   color:magenta;
 }
 
@@ -47,10 +38,6 @@ html.dark, .dark main {
 
 .dark .skill svg{
   color:purple;
-}
-
-.dark .skill a svg {
-  color:white;
 }
 
 .dark .tag{
@@ -64,6 +51,14 @@ html.dark, .dark main {
 
  .dark #themeToggle:hover{
   border-color:white;
+}
+
+.dark .skill ul{
+        list-style-image: url('../assets/svg/asteriskwhite.svg');
+    }
+
+header button:hover:not(.dark header button){
+  color:darkmagenta;
 }
 
  #themeToggle:hover{
@@ -94,7 +89,7 @@ p{
       font-weight: bold;
     }
 
-    .skill a svg{
+    .skill a svg, nav button:hover{
       color: darkmagenta;
     }
 
@@ -104,6 +99,11 @@ p{
 
     .skill svg{
       color:white;
+    }
+
+    .skill ul{
+        list-style-image: url('../assets/svg/asterisk.svg');
+        padding-left: 1.5em;
     }
 
 @media screen and (min-width: 636px) {

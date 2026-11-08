@@ -26,10 +26,6 @@ import ThemeIcon from 'src/components/ThemeIcon.astro';
         font-weight: bold;
     }
 
-    a:hover{
-        color:darkmagenta;
-    }
-
     .icon {
           transition: opacity 0.3s ease;
 }
@@ -65,8 +61,10 @@ li:hover .icon {
             </ul>
         </nav>
         </div>
-        <a href="/credits" class="text-center mx-auto w-fit text-[0.75em] tracking-wide hover:tracking-wider transition-all">(Créditos)</a>
-        <ThemeIcon/>
+        <footer class="flex items-center justify-evenly">
+            <a href="/credits" class="text-center w-fit text-[0.75em] tracking-wide hover:tracking-wider transition-all">(Créditos)</a>
+            <ThemeIcon/>
+        </footer>
     </main>
   </body>
 </html>
