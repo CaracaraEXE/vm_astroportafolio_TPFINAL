@@ -4,6 +4,63 @@
     box-sizing: border-box;
 }
 
+html.dark, .dark main {
+  background-color: rgb(63, 3, 63);
+  color: #fff;
+}
+
+.dark .menu {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+  color: #0d0950;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.dark .sub-menu {
+  > div{
+  background-color: rgba(255, 255, 255, 0);
+}
+}
+
+.dark header a{
+  font-weight: lighter;
+}
+
+.dark nav li a:hover, .dark nav button:hover, .dark h1, .dark h2, .dark h3:not(#timeline h3, article h3, .link-item h3), .dark #timeline svg,header button:hover{
+  color:magenta;
+}
+
+.dark .skill .icon{
+  background-color: white;
+}
+
+.dark .skill svg{
+  color:purple;
+}
+
+.dark .skill a svg {
+  color:white;
+}
+
+.dark .tag{
+  border-color: darkmagenta;
+}
+
+.dark .tag:hover, .dark .gallery-caption, .dark .link-item{
+  background-color: darkmagenta;
+}
+
 h1, h2, h3{
       font-family: 'Michroma';
 }
@@ -21,6 +78,23 @@ h2{
 
 p{
         margin-bottom: 1em;
+    }
+
+       nav li a:hover, nav button:hover{
+      color:darkmagenta;
+      font-weight: bold;
+    }
+
+    .skill a svg{
+      color: darkmagenta;
+    }
+
+    .skill a:hover{
+      color: magenta;
+    }
+
+    .skill svg{
+      color:white;
     }
 
 @media screen and (min-width: 636px) {
