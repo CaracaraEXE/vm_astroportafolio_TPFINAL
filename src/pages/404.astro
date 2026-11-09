@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+import '../styles/hover.css';
+import Icon from '../assets/svg/asterisk.svg';
+import { Font } from "astro:assets";
+import herb from '../assets/images/fondo1.png'
+---
+<style>
+
+    *{
+        font-family: var(--font-michroma);
+    }
+
+</style>
+<html lang="es">
+    <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <Font cssVariable="--font-michroma"/>
+  </head>
+  <body class={` bg-cover bg-top-right lg:bg-top h-lvh flex justify-center items-center`} style={`background-image: url('${herb.src}');`}>
+    <main class="bg-white h-fit rounded-lg fadeInUp-animation flex flex-col p-5 py-6">
+      <h1>404!</h1>
+      <p>No se encontro la pagina establecida.</p>
+<a href="/" class="font-bold"><Icon width={20} height={20} fill={"currentColor"} class="icon opacity-100 lg:opacity-0 scale-95"/><span class="hvr-underline-from-left">Volve al Inicio</span></a>
+    </main>
+  </body>
+</html>

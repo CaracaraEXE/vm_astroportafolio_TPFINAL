@@ -18,6 +18,10 @@ html.dark, .dark main {
   color: #fff;
 }
 
+.dark header section{
+  border-color: white;
+}
+
 .dark .sub-menu {
   > div{
   background-color: rgba(255, 255, 255, 0);
@@ -37,15 +41,15 @@ html.dark, .dark main {
 }
 
 .dark .skill svg{
-  color:purple;
+  color:#721378;
 }
 
 .dark .tag{
-  border-color: darkmagenta;
+  border-color: #721378;
 }
 
 .dark .tag:hover, .dark .gallery-caption, .dark .link-item, #extbtn{
-  background-color: darkmagenta;
+  background-color: #721378;
 }
 
 
@@ -58,11 +62,11 @@ html.dark, .dark main {
     }
 
 header button:hover:not(.dark header button){
-  color:darkmagenta;
+  color:#721378;
 }
 
  #themeToggle:hover{
-  border-color:darkmagenta;
+  border-color:#721378;
 }
 
 h1, h2, h3{
@@ -71,13 +75,13 @@ h1, h2, h3{
 
 h1{
     font-size: 1.75em;
-    color:darkmagenta;
+    color:#721378;
     margin-bottom: 0.25em;
 }
 
 h2{
     font-size: 1.5em;
-        color:darkmagenta;
+        color:#721378;
 }
 
 p{
@@ -85,12 +89,12 @@ p{
     }
 
        nav li a:hover, nav button:hover{
-      color:darkmagenta;
+      color:#721378;
       font-weight: bold;
     }
 
     .skill a svg, nav button:hover{
-      color: darkmagenta;
+      color: #721378;
     }
 
     .skill a:hover{

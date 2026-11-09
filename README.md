@@ -34,15 +34,17 @@ Durante el proceso de este portafolio sólo se utilizó a **Google Gemini Pro (E
 Especificamente, consulte por los siguientes problemas:
 - Un problema de .map() con el array hard-codeado en timeline.astro (Error propio que detecté gracias a la respuesta)
 - Complicaciones con importar SVGs dentro de un componente (Al final relei la documentacion y opte por importar el SVG y usarlo como componente en si)
-- Re-adaptar el codigo del tutorial de () para realizar un dropdown-opener de forma que AstroJS lo acepte (Usando EventListeners). Ver *dropdown.js*.
+- Consultar sobre problemas que tuve al seguir el tutorial de () para realizar un dropdown-opener (Usando EventListeners). El resultado se halla en *dropdown.js*.
 - Arreglar un schema Zod para las colecciones de AstroJS; asi como su previa importacion a través de Props y variables que extraen los datos, ej {work.data} (Deprecado al ser reemplazado por la API de Supabase).
-- Usar una imagen como `background-image`. Estaba tan deseperada que probé TODAS las respuestas que me dió, y la unica que remotamente dió algo fue *`style={'background-image: url('${herb.src}');'}*.
+- Usar una imagen como propiedad CSS `background-image`. Estaba tan deseperada que probé TODAS las respuestas que me dió, y la unica que remotamente dió algo fue *`style={'background-image: url('${herb.src}');'}*.
 - Solucionar un error de conexión de Supabase (No me ayudo para nada, pero lo solucione sola en el 2do intento de integracion)
 - Pasar los archivos JSON de */works* a un archivo CSV. *Fue una opción de último recurso, ya que todas las herramientas de conversión JSON-CSV daban formatos erroneos y que causaban problemas al tratar de importar los datos a la tabla de Supabase*
 - Arreglar un problema de Deployment con Vercel (No sirvió *y casi rompe mi proyecto,* al final me arriesgué e hice un cambio en astro.config.mjs que lo arregló aunque no se a qué costo).
 - Importar multiples fuentes en AstroJS, ya que no encontre soluciones buenas y el tutorial oficial solo cubre la importación de una. (Entre sus respuestas recordé que Google Fonts ofrece un enlace con las fuentes especificas, asi que usé eso y listo).
 
-En general, varias de las soluciones las descubrí por mi cuenta o luego fueron reemplazadas por otros cambios. No me gusta usar código dado sólo por la IA, asi que preferí usar lo minimo posible. **Tampoco quiero promover el uso de la IA en actividades artisticas, por que ninguno de los enlaces de /links posee algo que involve a la misma.**
+Por un tema de tiempo e inseguridad también probe el agente incorporado de **Supabase**, mas que nada porque no entendia los comandos en SQL ni ciertos schemas de tablas, asi que hubieron ciertas tareas repetitivas que son los pocos casos validos en donde veo valido el uso de la IA (...No voy a quitar comillas simples en 100+ celdas a mano, sinceramente)
+
+En general, varias de las soluciones las descubrí por mi cuenta o luego fueron reemplazadas por otros cambios. No me gusta usar código dado sólo por la IA, asi que preferí usar lo minimo posible. **Tampoco quiero promover el uso de la IA en actividades artisticas, por que ninguno de los enlaces de /links posee algo que involucra a la misma.**
 
 ## COMPONENTES
 
@@ -61,19 +63,41 @@ Ante cualquier desconexión se ha ofrecido un fallback presente en un archivo JS
 
 # ACCESIBILIDAD WEB
 - Pantalla responsive, el sideMenu cambia de posición y es toggleable en pantallas más chicas.
-- Tema oscuro/claro
+- Tema oscuro/claro ajustable a las preferencias de cada usuario.
 - Todas las combinaciones de color texto/fondo pasan los criterios de contraste de color AA establecidos por WCAG 2.1
 - Sitio revisado y aprobado por **WAVE Accesibility Checker** y **Axe Devtools**.
 - Todas las imagenes u otros elementos poseen un texto alternativo correspondiente (Atributo alt o title si es posible, asi como aria-label).
+- Se intento seguir la semantica correspondiente para la estructura del sitio.
 
 # LIMITACIONES
 
-AstroJS es un caso muy extraño de Framework, en donde varias cosas de Next.JS se simplifican pero otras se complejizan a niveles que rozan lo absurdo. El Javascript funciona de maneras hipermega especificas al punto que no pude implementar acordemente ciertos codigos que le hubiesen ido bien a la página.
+Aunque estoy muy feliz con el resultado final, sostengo que aún quedan cosas que mejorar.
 
-Una de las features descartadas que más desee agregar en un principio fue la de una herramienta de dibujo en donde el usuario podia crear algo por su cuenta, promoviendo la creación propia en un mundo donde cada vez los algoritmos hacen el trabajo de otros. No obstante el JS del modelo que iba a usar no lograba implementarse en la página, incluso cuando traté de hacer reverse engineering y modificar las funciones en base de qué tolera Astro en interactividad. Otra idea fue hacer la herramienta en mi sitio extra de Neocities y hacer un iframe del mismo. La idea estaba casi completa (Aunque el iframe era dificil de ajustar el tamaño), pero lo que me hizo cortarlo por completo fue que no era mobile friendly. Tampoco me convencieron las otras alternativas y/o librerias que se hallaban por la web.
+AstroJS es un caso muy extraño de Framework, en donde varias cosas de Next.JS se simplifican pero otras se sobre-complejizan a niveles que rozan lo absurdo. El Javascript funciona de maneras hiper-mega-especificas al punto que no pude implementar acordemente ciertos codigos que le hubiesen ido bien a la página. Tambien detesto el hecho que no se pueden colocar multiples imagenes de forma normal; si o si tienen que importarse previamente.
 
-En el futuro quisiera poder agregarle más cosas a esta página (Siempre y cuando mantenga su simplicidad). Mis dos ideas principales es un componente de busqueda de Proyectos (Por titulo) y un apartado aparte de **Blog**, aunque este es más bien una excusa para mantener a Supabase activo por más tiempo.
+Una de las features descartadas que más desee agregar en un principio fue la de una herramienta de dibujo en donde el usuario podia crear algo por su cuenta, promoviendo la creación propia en un mundo donde cada vez los algoritmos hacen el trabajo de otros. No obstante el JS del modelo que iba a usar no lograba implementarse en la página, incluso cuando traté de hacer reverse engineering por mi cuenta y modificar las funciones en base de qué tolera Astro en interactividad. Otra idea fue hacer la herramienta en mi sitio extra de Neocities y hacer un iframe del mismo. La idea estaba casi completa (Aunque el iframe era dificil de ajustar el tamaño), pero lo que me hizo cortarlo por completo fue que no era mobile friendly. Tampoco me convencieron las otras alternativas y/o librerias que se hallaban por la web.
 
-## 👀 Want to learn more?
+El guestbook fue una de las pocas partes cuya implementación siento que quedó a medias, ya que no está instalado dentro de un sitio sino es un iframe conteniendo un servicio externo (Atabook). La falta de una API que me convenciese (La que estaba familiar, MongoDB, era dificil de conectar a este framework) para guardar los mensajes retrasó mucho el proceso de desarollo. E incluso ya incluido, siento que su inclusión puede sentirse redundante al ya haber secciones de comentarios para cada proyecto. En el caso de dejarlo en la página pero hacerlo mejor integrado, lo que más me convenció es [este tutorial](https://resrc.neocities.org/posts/make-your-own-guestbook) en particular que hace uso de Cloudflare Workers (Lo cual contiene integraciones con Supabase).
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+En el futuro quisiera poder hacer las siguientes modificaciones:
+- Componente de busqueda de proyectos (Busca por titulo y devuelve resultados que coincidan)
+- Un apartado aparte de **Blog**, aunque este es más bien una excusa para mantener a Supabase activo por más tiempo.
+- Otras configuraciones de accesibilidad web; como aumentar el tamaño el texto.
+- Hacer un boton de volver al inicio
+- Y por supuesto, alguna funcion de dibujo que funcione.
+
+## CREDITOS
+
+El portafolio oficial posee un apartado de */credits*, con todas las personas que lograron que este proyecto sea posible. No obstante, a modo de resumir, estos son los contribuyentes en el tema de códigos.
+- [AstroJS Docs](https://docs.astro.build/en/getting-started/)
+- [Hover.css](https://ianlunn.github.io/Hover)
+- [WebcoreUI](https://webcoreui.dev/d)
+- [Coding2Go (Youtube)](https://www.youtube.com/watch?v=R7b3OlEyqug)
+- [Astro Frame Shift](https://github.com/EmaSuriano/astro-frame-shift)
+- [Atabook](https://atabook.org/es)
+- [Widget Star](https://widget.st/)
+- [Pierdomenico (Dev.to)](https://dev.to/mino89/incredibly-simple-talk-bubbles-with-tailwind-4fe0)
+
+## EVIDENCIA DE PROCESO
+Presente en forma de documento de Google Docs.
+[Enlace directo](https://docs.google.com/document/d/1mGSYDaP2n53ak3Kuqw2ERQe5YNMiG8Xo8iTCh71vz2c/edit?usp=sharing)
