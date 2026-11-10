@@ -10,7 +10,7 @@ También quisiera enfocar esta página a otros artistas como yo, ofreciendo dife
 
 Se recomienda tener descargado `Node.js` para inicializar el proyecto, ya que depende el comando `npm run dev` para inicializarse. La URL donde se hostea el proyecto se puede acceder desde Vercel.
 
-La única dependencia externa que hace uso el proyecto es **WebcoreUI** para el carrousel, el cual se instala usando `npm create webcore@latest`.
+Mientras que el proyecto hace uso de otras dependencias, las unicas que hay que re-instalar al probar este proyecto en otra computadora son AstroJS (+ Extension de Visual Studio Code) y Node.JS (En mi caso, use el installer permitido).
 
 ## OVERVIEW
 
@@ -97,6 +97,7 @@ El portafolio oficial posee un apartado de */credits*, con todas las personas qu
 - [Atabook](https://atabook.org/es)
 - [Widget Star](https://widget.st/)
 - [Pierdomenico (Dev.to)](https://dev.to/mino89/incredibly-simple-talk-bubbles-with-tailwind-4fe0)
+- [Astro Embed](https://github.com/delucis/astro-embed)
 
 ## EVIDENCIA DE PROCESO
 Presente en forma de documento de Google Docs.
