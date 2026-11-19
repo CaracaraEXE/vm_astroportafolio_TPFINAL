@@ -10,7 +10,9 @@ También quisiera enfocar esta página a otros artistas como yo, ofreciendo dife
 
 Se recomienda tener descargado `Node.js` para inicializar el proyecto, ya que depende el comando `npm run dev` para inicializarse. La URL donde se hostea el proyecto se puede acceder desde Vercel.
 
-Mientras que el proyecto hace uso de otras dependencias, las unicas que hay que re-instalar al probar este proyecto en otra computadora son AstroJS (+ Extension de Visual Studio Code) y Node.JS (En mi caso, use el installer permitido).
+Mientras que el proyecto hace uso de otras dependencias, las unicas que hay que re-instalar al probar este proyecto en otra computadora son AstroJS (+ Extension de Visual Studio Code) haciendo uso de `npm install astro` y Node.JS (En mi caso, use el installer permitido).
+
+Por un tema de privacidad, te recomiendo usar el comando `npx astro telemetry disable` para evitar que Astro coma tus información.
 
 ## OVERVIEW
 

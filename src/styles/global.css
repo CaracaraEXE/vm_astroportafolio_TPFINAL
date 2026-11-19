@@ -32,7 +32,7 @@ html.dark, .dark main {
   font-weight: lighter;
 }
 
-.dark nav li a:hover, .dark nav button:hover, .dark h1, .dark h2, .dark h3:not(#timeline h3, article h3, .link-item h3), footer a:hover, .dark header a:hover, .dark q{
+.dark nav li a:hover, .dark nav button:hover, .dark h1, .dark h2, .dark h3:not(#timeline h3, article h3, .link-item h3), footer a:hover, .dark header a:hover, .dark q, .dark .skill a:hover{
   color:magenta;
 }
 
@@ -98,7 +98,7 @@ p{
     }
 
     .skill a:hover{
-      color: magenta;
+      color: #721378;
     }
 
     .skill svg{
